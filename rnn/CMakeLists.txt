@@ -9,6 +9,8 @@ find_package(LibXml2 REQUIRED)
 find_path(LIBICONV_INCLUDE_DIR iconv.h)
 include_directories(${LIBXML2_INCLUDE_DIR} ${LIBICONV_INCLUDE_DIR})
 
+find_program (BASH_PROGRAM bash)
+
 configure_file(rnn_path.h.in rnn_path.h ESCAPE_QUOTES)
 include_directories(${PROJECT_BINARY_DIR})
 
@@ -34,3 +36,6 @@ install(TARGETS demmio headergen rnn dedma lookup
 	ARCHIVE DESTINATION lib${LIB_SUFFIX})
 
 add_test(check_rnndb rnncheck root.xml)
+if (BASH_PROGRAM)
+  add_test (validate_rnndb ${BASH_PROGRAM} ${CMAKE_CURRENT_SOURCE_DIR}/rnnvalidate.sh)
+endif (BASH_PROGRAM)
