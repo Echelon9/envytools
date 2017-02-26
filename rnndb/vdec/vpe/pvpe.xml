@@ -6,7 +6,7 @@
 
 <import file="nvchipsets.xml" />
 
-<domain name="NV_MMIO" bare="yes" prefix="chipset">
+<domain name="NV_MMIO" bare="true" prefix="chipset">
 
 <array name="PVPE" offset="0xb000" stride="0x100" length="1" variants="NV40:G98 G200">
 	<reg32 offset="0x070" name="UNK070"/> <!-- RO 101 -->

@@ -8,7 +8,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 <import file="fifo/nv_object.xml" />
 <import file="graph/nv1_2d.xml" />
 
-<domain name="SUBCHAN" bare="yes">
+<domain name="SUBCHAN" bare="true">
 	<stripe prefix="obj-class" variants="NV1_IFM">
 		<reg32 offset="0x040" name="DATA" length="16"/> <!-- internal, written by PDMA -->
 		<reg32 offset="0x308" name="POINT" type="xy16"/>

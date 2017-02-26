@@ -8,7 +8,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 <import file="fifo/nv_object.xml" />
 <import file="graph/nv1_2d.xml" />
 
-<domain name="SUBCHAN" bare="yes">
+<domain name="SUBCHAN" bare="true">
 	<stripe prefix="obj-class" variants="NV1_BLIT-NV15_BLIT">
 		<reg32 offset="0x010c" name="PATCH"/>
 		<stripe variants="NV15_BLIT">

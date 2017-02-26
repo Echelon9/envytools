@@ -458,7 +458,7 @@ for stripeobj in stripeobjs:
 
 		subchan = ET.Element("domain")
 		subchan.attrib["name"] = "NV01_SUBCHAN"
-		subchan.attrib["bare"] = "yes"
+		subchan.attrib["bare"] = "true"
 		subchan.attrib["size"] = "0x2000"
 
 		stripe.attrib["prefix"] = "obj-class"
@@ -479,7 +479,7 @@ for stripeobj in stripeobjs:
 		mmio = ET.Element("domain")
 		if stripeobj.offset != 0 or name == "NV_PMC":
 			mmio.attrib["name"] = "NV_MMIO"
-			mmio.attrib["bare"] = "yes"
+			mmio.attrib["bare"] = "true"
 			is_mmio = True
 		elif name:
 			mmio.attrib["name"] = name

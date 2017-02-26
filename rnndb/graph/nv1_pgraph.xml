@@ -92,7 +92,7 @@
 	<bitfield pos="15" name="SUBCONTEXT_ID" type="uint"/>
 </bitset>
 
-<domain name="NV_MMIO" bare="yes" prefix="chipset">
+<domain name="NV_MMIO" bare="true" prefix="chipset">
 <array name="PGRAPH" offset="0x400000" stride="0x1000" length="1" variants="NV1:NV3">
 	<reg32 offset="0x0080" name="DEBUG_0">
 		<bitfield pos="0" name="RESET_TRIGGER"/>

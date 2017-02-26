@@ -154,7 +154,7 @@
 	<reg32 offset="0x8b4" name="FP_TMDS_DATA"/>
 </group>
 
-<domain name="NV_MMIO" bare="yes" prefix="chipset">
+<domain name="NV_MMIO" bare="true" prefix="chipset">
 	<array name="PRAMDAC" offset="0x680000" stride="0x1000" length="1" variants="NV3:G80">
 		<use-group name="nv_pramdac"/>
 	</array>

@@ -7,7 +7,7 @@
 <import file="nvchipsets.xml" />
 <import file="display/nv_vga.xml" />
 
-<domain name="NV_MMIO" bare="yes" prefix="chipset">
+<domain name="NV_MMIO" bare="true" prefix="chipset">
 
 <array offset="0x6c0000" name="PRM" stride="0x8000" length="1" variants="NV1">
 	<reg32 offset="0x080" name="UNK80">

@@ -148,7 +148,7 @@
 	<reg32 offset="0x03a0" name="FRONT_FACE" type="gl_front_face"/>
 </group>
 
-<domain name="SUBCHAN" bare="yes">
+<domain name="SUBCHAN" bare="true">
 	<stripe prefix="obj-class" variants="NV10_3D-NV17_3D">
 		<use-group name="nv10tcl-base"/>
 

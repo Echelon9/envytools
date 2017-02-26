@@ -29,7 +29,7 @@
 	</reg32>
 </domain>
 
-<domain name="NV_MMIO" bare="yes" prefix="chipset">
+<domain name="NV_MMIO" bare="true" prefix="chipset">
 
 <array name="PBSP" offset="0x103000" stride="0x1000" length="1" variants="G84:G98 G200">
 	<array offset="0x000" name="VLD" stride="0x200">

@@ -6,7 +6,7 @@
 
 <import file="nvchipsets.xml" />
 
-<domain name="NV_MMIO" bare="yes" prefix="chipset">
+<domain name="NV_MMIO" bare="true" prefix="chipset">
 
 <array name="PVIDEO" offset="0x8000" stride="0x1000" length="1" variants="NV10:G80">
 	<stripe variants="NV10-NV40">

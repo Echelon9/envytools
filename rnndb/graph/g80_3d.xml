@@ -45,7 +45,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	<value value="0x31" name="11_11_10"/>
 </enum>
 
-<domain name="SUBCHAN" bare="yes">
+<domain name="SUBCHAN" bare="true">
 	<stripe prefix="obj-class" variants="G80_3D-MCP89_3D">
 
 		<!-- NOTE: G80_3D_CYLINDRICAL_WRAP doesn't exit, it has to be done in a GP -->

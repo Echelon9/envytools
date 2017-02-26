@@ -198,13 +198,13 @@
 
 
 <!-- Cursor EVO channel: size=0x1000 -->
-<domain name="NV_EVO_CURSOR" bare="yes" prefix="chipset" variants="G80-">
+<domain name="NV_EVO_CURSOR" bare="true" prefix="chipset" variants="G80-">
 	<use-group name="CURSOR_OVLYIMM_COMMON"/>
 </domain>
 
 
 <!-- Overlay immediate EVO channel: size=0x1000 -->
-<domain name="NV_EVO_OVERLAY_IMM" bare="yes" prefix="chipset" variants="G80-">
+<domain name="NV_EVO_OVERLAY_IMM" bare="true" prefix="chipset" variants="G80-">
 	<use-group name="CURSOR_OVLYIMM_COMMON"/>
 
 	<reg32 offset="0x88" name="AWAKEN_ONCE_FLIPPED_TO">
@@ -764,7 +764,7 @@
 
 
 <!-- Core EVO channel -->
-<domain name="NV_EVO_CORE" bare="yes" prefix="chipset" variants="G80-">
+<domain name="NV_EVO_CORE" bare="true" prefix="chipset" variants="G80-">
 	<!-- write 0 here executes all evo commands pending in PDISPLAY fifo -->
 	<reg32 offset="0x80" name="UPDATE" >
 		<bitfield pos="31" name="NOT_DRIVER_FRIENDLY"/>
@@ -873,7 +873,7 @@
 
 
 <!-- Base EVO channels, one per HEAD -->
-<domain name="NV_EVO_BASE" bare="yes" prefix="chipset">
+<domain name="NV_EVO_BASE" bare="true" prefix="chipset">
 	<reg32 offset="0x80" name="UPDATE">
 		<bitfield high="25" low="24" name="SPECIAL_HANDLING" type="GF119_EVO_SPECIAL_HANDLING" variants="GF119-"/>
 		<bitfield high="23" low="16" name="SPECIAL_HANDLING_REASON" variants="GF119-"/>
@@ -972,7 +972,7 @@
 
 
 <!-- Overlay EVO channel -->
-<domain name="NV_EVO_OVERLAY" bare="yes" prefix="chipset">
+<domain name="NV_EVO_OVERLAY" bare="true" prefix="chipset">
 	<reg32 offset="0x80" name="UPDATE">
 		<bitfield high="25" low="24" name="SPECIAL_HANDLING" type="GF119_EVO_SPECIAL_HANDLING" variants="GF119-"/>
 		<bitfield high="23" low="16" name="SPECIAL_HANDLING_REASON" variants="GF119-"/>

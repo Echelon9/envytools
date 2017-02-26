@@ -301,31 +301,31 @@
 	<reg8 offset="0xa3" name="STACK_CTRL" type="vga_stack_ctrl" variants="G80-"/>
 </group>
 
-<domain name="NV_AR" bare="yes" prefix="chipset">
+<domain name="NV_AR" bare="true" prefix="chipset">
 <stripe name="AR">
 	<use-group name="vga_ar"/>
 </stripe>
 </domain>
 
-<domain name="NV_SR" bare="yes" prefix="chipset">
+<domain name="NV_SR" bare="true" prefix="chipset">
 <stripe name="SR">
 	<use-group name="vga_sr"/>
 </stripe>
 </domain>
 
-<domain name="NV_GR" bare="yes" prefix="chipset">
+<domain name="NV_GR" bare="true" prefix="chipset">
 <stripe name="GR">
 	<use-group name="vga_gr"/>
 </stripe>
 </domain>
 
-<domain name="NV_CR" bare="yes" prefix="chipset">
+<domain name="NV_CR" bare="true" prefix="chipset">
 <stripe name="CR">
 	<use-group name="vga_cr"/>
 </stripe>
 </domain>
 
-<domain name="NV_MMIO" bare="yes" prefix="chipset">
+<domain name="NV_MMIO" bare="true" prefix="chipset">
 
 	<reg8 offset="0xa0000" name="PRMFB" length="0x20000" variants="NV3-" />
 

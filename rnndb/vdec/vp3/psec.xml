@@ -8,7 +8,7 @@
 <import file="falcon.xml" />
 <import file="falcon_crypt.xml" />
 
-<domain name="NV_MMIO" bare="yes" prefix="chipset">
+<domain name="NV_MMIO" bare="true" prefix="chipset">
 
 <bitset name="G98_PSEC_INTR" varset="chipset">
 	<bitfield low="0" high="7" name="FALCON" type="falcon_intr"/>

@@ -7,7 +7,7 @@
 <import file="nvchipsets.xml" />
 <import file="falcon.xml" />
 
-<domain name="NV_MMIO" bare="yes" prefix="chipset">
+<domain name="NV_MMIO" bare="true" prefix="chipset">
 
 <bitset name="GT215_PCOPY_INTR" varset="chipset">
 	<bitfield low="0" high="7" name="FALCON" type="falcon_intr"/>

@@ -16,7 +16,7 @@
 	</reg32>
 </group>
 
-<domain name="NV_MMIO" bare="yes" prefix="chipset">
+<domain name="NV_MMIO" bare="true" prefix="chipset">
 	<array name="PCRTC" offset="0x600000" stride="0x1000" length="1" variants="NV4:G80">
 		<use-group name="nv_pcrtc"/>
 	</array>

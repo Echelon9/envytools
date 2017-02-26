@@ -113,7 +113,7 @@
 	<value value="7" name="16X"/>
 </enum>
 
-<domain name="SUBCHAN" bare="yes">
+<domain name="SUBCHAN" bare="true">
 	<stripe prefix="obj-class" variants="NV30_3D-NV44_3D">
 		<reg32 offset="0x120" name="FLIP_SET_READ"/>
 		<reg32 offset="0x124" name="FLIP_SET_WRITE"/>

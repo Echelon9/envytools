@@ -6,7 +6,7 @@
 
 <import file="nvchipsets.xml" />
 
-<domain name="NV_MMIO" bare="yes" prefix="chipset">
+<domain name="NV_MMIO" bare="true" prefix="chipset">
 	<array offset="0x2000" name="PFIFO" stride="0x2000" length="1" variants="NV1:NV4">
 		<reg32 offset="0x040" name="WAIT_RETRY"/> <!-- 8 bits -->
 		<reg32 offset="0x080" name="CACHE_ERROR" access="r">

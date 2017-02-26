@@ -277,7 +277,7 @@ for filename, tclnames in [("nv10-20tcl", ("NV10TCL", "NV20TCL")), ("nv30-40tcl"
 
 	domain = ET.Element("domain")
 	domain.attrib["name"] = "NV01_SUBCHAN"
-	domain.attrib["bare"] = "yes"
+	domain.attrib["bare"] = "true"
 	domain.attrib["size"] = "0x2000"
 	domain.append(common)
 	database.append(domain)

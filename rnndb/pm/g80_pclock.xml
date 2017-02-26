@@ -6,7 +6,7 @@
 
 <import file="nvchipsets.xml" />
 
-<domain name="NV_MMIO" bare="yes" prefix="chipset">
+<domain name="NV_MMIO" bare="true" prefix="chipset">
 
 <bitset name="g80_spll_ctrl" inline="yes">
 	<bitfield low="0" high="7" name="UNK0"/>

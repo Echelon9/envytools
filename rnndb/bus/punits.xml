@@ -6,7 +6,7 @@
 
 <import file="nvchipsets.xml" />
 
-<domain name="NV_MMIO" bare="yes" prefix="chipset">
+<domain name="NV_MMIO" bare="true" prefix="chipset">
 
 <array name="PUNITS" offset="0x022400" stride="0x400" length="1" variants="GF100-">
 	<reg32 offset="0x000" name="FUSE_CONTROL">

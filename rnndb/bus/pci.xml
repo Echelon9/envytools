@@ -520,7 +520,7 @@
 	<use-group name="nv_pci_hda"/>
 </domain>
 
-<domain name="NV_MMIO" bare="yes" prefix="chipset">
+<domain name="NV_MMIO" bare="true" prefix="chipset">
 	<array offset="0x88000" name="PPCI" stride="0x1000" length="1" variants="NV40-">
 		<use-group name="nv_pci"/>
 	</array>

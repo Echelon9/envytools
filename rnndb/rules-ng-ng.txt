@@ -96,16 +96,16 @@ access something useful. <domain> can have the following attributes:
    tags that will result in a merged domain: tags with size can be merged with
    tags without size, resulting in merged domain that has size. Error only
    happens when the merged domains both have sizes, and the sizes differ.
- - bare [optional]: if set to "no", all children items will have the domain
-   name prepended to their names. If set to "yes", such prefixing doesn't
-   happen. Default is "no".
+ - bare [optional]: if set to "false", all children items will have the domain
+   name prepended to their names. If set to "true", such prefixing doesn't
+   happen. Default is "false".
  - prefix [optional]: selects the string that should be prepended to name
    of every child item. The special value "none" means no prefix, and is the
    default. All other values are looked up as <enum> names and, for each child
    item, its name is prefixed with name of the earliest variant in the given
    enum that supports given item.
 
-<domain name="NV_MMIO" size="0x1000000" prefix="chipset" bare="yes">
+<domain name="NV_MMIO" size="0x1000000" prefix="chipset" bare="true">
 	<reg32 offset="0" name="PMC_BOOT_0" />
 	<reg32 offset="4" name="PMC_BOOT_1" varset="chipset" variants="NV10-" />
 	<reg32 offset="0x100" name="PMC_INTR" />
@@ -569,7 +569,7 @@ Results in:
 #define PVIDEO_LUMINANCE	(0x8910+(i)*4)
 #define PVIDEO_CHROMINANCE	(0x8918+(i)*4)
 
-<domain name="NV_OBJECT" bare="yes">
+<domain name="NV_OBJECT" bare="true">
 	<stripe name="OBJECT" prefix="chipset">
 		<reg32 offset="0x00" name="NAME" />
 		<reg32 offset="0x10" name="FENCE_ADDRESS_HIGH" variants="NV50-" />

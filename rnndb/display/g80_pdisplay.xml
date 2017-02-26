@@ -89,7 +89,7 @@
 	</reg32>
 </group>
 
-<domain name="NV_MMIO" bare="yes" prefix="chipset">
+<domain name="NV_MMIO" bare="true" prefix="chipset">
 	<array name="PRMIO" offset="0x601000" stride="0x1000" length="1" variants="G80-">
 		<!-- as opposed to earlier cards, G80+ keep all the legacy regs in one place. -->
 		<use-group name="nv_vga_vio"/>

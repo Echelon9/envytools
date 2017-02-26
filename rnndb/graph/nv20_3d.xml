@@ -94,7 +94,7 @@
 	<value value="12" name="TEX3"/>
 </enum>
 
-<domain name="SUBCHAN" bare="yes">
+<domain name="SUBCHAN" bare="true">
 	<stripe prefix="obj-class" variants="NV20_3D-NV25_3D">
 		<use-group name="nv10tcl-base"/>
 

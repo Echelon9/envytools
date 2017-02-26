@@ -6,7 +6,7 @@
 
 <import file="nvchipsets.xml" />
 
-<domain name="NV_MMIO" bare="yes" prefix="chipset">
+<domain name="NV_MMIO" bare="true" prefix="chipset">
 
 <array offset="0x602000" name="PRAM" stride="0x1000" length="1" variants="NV1">
 	<reg32 offset="0x200" name="SIZE">

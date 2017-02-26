@@ -7,7 +7,7 @@
 <import file="nvchipsets.xml" />
 <import file="g80_defs.xml" />
 
-<domain name="NV_MMIO" bare="yes" prefix="chipset">
+<domain name="NV_MMIO" bare="true" prefix="chipset">
 
 <array name="PCOUNTER" offset="0xa000" stride="0x1000" length="1" variants="NV40:GF100">
 	<reg32 offset="0x400" name="PRE_SRC" length="8">

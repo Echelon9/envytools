@@ -39,7 +39,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	<value value="4" name="ALWAYS"/>
 </enum>
 
-<domain name="SUBCHAN" bare="yes">
+<domain name="SUBCHAN" bare="true">
 	<stripe prefix="obj-class" variants="NV3_ZPOINT">
 		<reg32 offset="0x0304" name="CONFIG">
 			<bitfield low="16" high="19" name="Z_FUNC" type="nv3_comparison_op"/>

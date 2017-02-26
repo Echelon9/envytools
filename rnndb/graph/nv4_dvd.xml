@@ -18,7 +18,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	<value value="0x3" name="TRANSPARENT"/>
 </enum>
 
-<domain name="SUBCHAN" bare="yes">
+<domain name="SUBCHAN" bare="true">
 	<stripe prefix="obj-class" variants="NV4_DVD_SUBPICTURE-NV10_DVD_SUBPICTURE">
 		<reg32 offset="0x0100" name="NOP"/>
 		<reg32 offset="0x0104" name="NOTIFY"/>

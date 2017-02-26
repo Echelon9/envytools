@@ -6,7 +6,7 @@
 
 <import file="nvchipsets.xml" />
 
-<domain name="NV_MMIO" bare="yes" prefix="chipset">
+<domain name="NV_MMIO" bare="true" prefix="chipset">
 
 <bitset name="gt215_pll_ctrl" inline="yes">
 	<bitfield pos="0" name="ENABLE"/>

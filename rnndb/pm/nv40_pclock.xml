@@ -6,7 +6,7 @@
 
 <import file="nvchipsets.xml" />
 
-<domain name="NV_MMIO" bare="yes" prefix="chipset">
+<domain name="NV_MMIO" bare="true" prefix="chipset">
 
 <array offset="0x4000" name="PCLOCK" stride="0x1000" variants="NV40:G80" length="1">
 </array>

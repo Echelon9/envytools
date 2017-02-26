@@ -6,7 +6,7 @@
 
 <import file="nvchipsets.xml" />
 
-<domain name="NV_MMIO" bare="yes" prefix="chipset">
+<domain name="NV_MMIO" bare="true" prefix="chipset">
 
 <bitset name="nv1_straps" inline="yes">
 	<bitfield low="0" high="1" name="FB_TYPE">

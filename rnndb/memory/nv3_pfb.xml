@@ -6,7 +6,7 @@
 
 <import file="nvchipsets.xml"/>
 
-<domain name="NV_MMIO" bare="yes" prefix="chipset">
+<domain name="NV_MMIO" bare="true" prefix="chipset">
 
 <array name="PFB" offset="0x100000" stride="0x1000" length="1" variants="NV3:NV10">
 	<reg32 offset="0x000" name="BOOT_0" variants="NV3:NV3T">

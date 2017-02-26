@@ -27,7 +27,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	<value value="7" name="UNK19"/> <!-- NV30+ -->
 </enum>
 
-<domain name="SUBCHAN" bare="yes">
+<domain name="SUBCHAN" bare="true">
 	<stripe prefix="obj-class" variants="NV4_INDEX-NV40_INDEX">
 		<reg32 offset="0x010c" name="PATCH"/>
 		<reg32 offset="0x0180" name="DMA_NOTIFY" type="object"/>

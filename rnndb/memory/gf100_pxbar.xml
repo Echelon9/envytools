@@ -6,7 +6,7 @@
 
 <import file="nvchipsets.xml" />
 
-<domain name="NV_MMIO" bare="yes" prefix="chipset">
+<domain name="NV_MMIO" bare="true" prefix="chipset">
 
 <array name="PXBAR" offset="0x13b000" stride="0x4000" length="1" variants="GF100-">
 	<array name="GPC_UNK1" offset="0x0000" stride="0x80" length="32">

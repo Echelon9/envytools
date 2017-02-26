@@ -11,7 +11,7 @@
 <import file="graph/g80_pgraph/mpc.xml" />
 <import file="graph/g80_pgraph/mp.xml" />
 
-<domain name="NV_MMIO" bare="yes" prefix="chipset">
+<domain name="NV_MMIO" bare="true" prefix="chipset">
 <array name="PGRAPH" offset="0x400000" stride="0x10000" length="1" variants="G80:GF100">
 	<reg32 offset="0x0040" name="DISABLE">
 		<brief>Disable / reset subunits</brief>

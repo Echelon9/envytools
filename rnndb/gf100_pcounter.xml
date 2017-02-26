@@ -6,7 +6,7 @@
 
 <import file="nvchipsets.xml" />
 
-<domain name="NV_MMIO" bare="yes" prefix="chipset">
+<domain name="NV_MMIO" bare="true" prefix="chipset">
 
 <array name="PCOUNTER" offset="0x180000" stride="0x40000" length="1" variants="GF100-">
 	<group name="pcounter_dom">

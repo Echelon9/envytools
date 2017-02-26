@@ -5,7 +5,7 @@
 
 <import file="nvchipsets.xml" />
 
-<domain name="NV_MMIO" bare="yes" prefix="chipset">
+<domain name="NV_MMIO" bare="true" prefix="chipset">
 <array name="PDMA" offset="0x401000" stride="0x1000" length="1" variants="NV3:NV4">
 	<reg32 offset="0x100" name="INTR">
 		<bitfield pos="0" name="INST_NULL"/>

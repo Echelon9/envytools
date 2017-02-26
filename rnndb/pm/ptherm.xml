@@ -843,7 +843,7 @@
 	</array>
 </group>
 
-<domain name="NV_MMIO" bare="yes" prefix="chipset">
+<domain name="NV_MMIO" bare="true" prefix="chipset">
 	<array name="PTHERM" offset="0x00020000" stride="0x1000" length="1" variants="G80">
 		<use-group name="g80_therm"/>
 	</array>

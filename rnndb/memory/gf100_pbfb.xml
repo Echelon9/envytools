@@ -7,7 +7,7 @@
 <import file="nvchipsets.xml" />
 <import file="memory/nv_pfb.xml" />
 
-<domain name="NV_MMIO" bare="yes" prefix="chipset">
+<domain name="NV_MMIO" bare="true" prefix="chipset">
 
 <group name="gf100_pbfb">
 	<stripe offset="0x000" name="HW_BLK">

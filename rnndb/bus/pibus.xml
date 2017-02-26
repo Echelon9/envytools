@@ -6,7 +6,7 @@
 
 <import file="nvchipsets.xml" />
 
-<domain name="NV_MMIO" bare="yes" prefix="chipset">
+<domain name="NV_MMIO" bare="true" prefix="chipset">
 
 <array name="PIBUS" offset="0x120000" stride="0x10000" length="1" variants="GF100-">
 	<group name="gf100_pibus_mmio_common">

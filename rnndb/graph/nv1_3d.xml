@@ -7,7 +7,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 <import file="nv_defs.xml" />
 <import file="fifo/nv_object.xml" />
 
-<domain name="SUBCHAN" bare="yes">
+<domain name="SUBCHAN" bare="true">
 	<stripe prefix="obj-class" variants="NV1_TEXLIN-NV1_TEXQUADBETA">
 		<reg32 offset="0x304" name="SUBDIVIDE">
 			<bitfield low="0" high="3" name="S_LOG2" min="2" max="8"/>

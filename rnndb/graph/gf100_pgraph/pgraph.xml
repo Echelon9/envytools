@@ -11,7 +11,7 @@
 <import file="graph/gf100_pgraph/gpc.xml" />
 <import file="graph/gf100_pgraph/rop.xml" />
 
-<domain name="NV_MMIO" bare="yes" prefix="chipset">
+<domain name="NV_MMIO" bare="true" prefix="chipset">
 
 <array name="PGRAPH" offset="0x400000" stride="0x200000" length="1" variants="GF100-">
 
