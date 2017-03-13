@@ -222,7 +222,7 @@
 		<annotation>
 			<documentation>refType</documentation>
 		</annotation>
-		<attribute name="ref" type="NMTOKEN" use="required" />
+		<attribute name="name" type="NMTOKEN" use="required" />
 	</complexType>
 
 
