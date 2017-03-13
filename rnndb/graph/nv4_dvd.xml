@@ -7,12 +7,12 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 <import file="nv_defs.xml"/>
 <import file="fifo/nv_object.xml"/>
 
-<enum name="nv4_dvd_color_format" inline="yes">
+<enum name="nv4_dvd_color_format" inline="true">
 	<value value="0x1" name="V8YB8U8YA8"/>
 	<value value="0x2" name="YB8V8YA8U8"/>
 </enum>
 
-<enum name="nv4_dvd_overlay_format" inline="yes">
+<enum name="nv4_dvd_overlay_format" inline="true">
 	<value value="0x1" name="A8V8U8Y8"/>
 	<value value="0x2" name="A4V6YB6A4U6YA6"/>
 	<value value="0x3" name="TRANSPARENT"/>

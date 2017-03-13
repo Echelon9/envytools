@@ -4,18 +4,18 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 <import file="copyright.xml"/>
 
-<enum name="gl_polygon_mode" inline="yes">
+<enum name="gl_polygon_mode" inline="true">
 	<value value="0x1b00" name="POINT"/>
 	<value value="0x1b01" name="LINE"/>
 	<value value="0x1b02" name="FILL"/>
 </enum>
 
-<enum name="gl_shade_model" inline="yes">
+<enum name="gl_shade_model" inline="true">
 	<value value="0x1d00" name="FLAT"/>
 	<value value="0x1d01" name="SMOOTH"/>
 </enum>
 
-<enum name="gl_comparison_op" inline="yes">
+<enum name="gl_comparison_op" inline="true">
 	<value value="0x0200" name="NEVER"/>
 	<value value="0x0201" name="LESS"/>
 	<value value="0x0202" name="EQUAL"/>
@@ -26,7 +26,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	<value value="0x0207" name="ALWAYS"/>
 </enum>
 
-<enum name="gl_blend_factor" inline="yes">
+<enum name="gl_blend_factor" inline="true">
 	<value value="0x0000" name="ZERO"/>
 	<value value="0x0001" name="ONE"/>
 	<value value="0x0300" name="SRC_COLOR"/>
@@ -66,7 +66,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	<value value="0xc903" name="ONE_MINUS_SRC1_ALPHA"/>
 </enum>
 
-<enum name="gl_blend_equation" inline="yes">
+<enum name="gl_blend_equation" inline="true">
 	<value value="0x8006" name="FUNC_ADD"/>
 	<value value="0x8007" name="MIN"/>
 	<value value="0x8008" name="MAX"/>
@@ -74,7 +74,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	<value value="0x800b" name="FUNC_REVERSE_SUBTRACT"/>
 </enum>
 
-<enum name="gl_stencil_op" inline="yes">
+<enum name="gl_stencil_op" inline="true">
 	<value value="0x0000" name="ZERO"/>
 	<value value="0x150a" name="INVERT"/>
 	<value value="0x1e00" name="KEEP"/>
@@ -85,18 +85,18 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	<value value="0x8508" name="DECR_WRAP"/>
 </enum>
 
-<enum name="gl_front_face" inline="yes">
+<enum name="gl_front_face" inline="true">
 	<value value="0x0900" name="CW"/>
 	<value value="0x0901" name="CCW"/>
 </enum>
 
-<enum name="gl_cull_face" inline="yes">
+<enum name="gl_cull_face" inline="true">
 	<value value="0x0404" name="FRONT"/>
 	<value value="0x0405" name="BACK"/>
 	<value value="0x0408" name="FRONT_AND_BACK"/>
 </enum>
 
-<enum name="gl_logic_op" inline="yes">
+<enum name="gl_logic_op" inline="true">
 	<value value="0x1500" name="CLEAR"/>
 	<value value="0x1501" name="AND"/>
 	<value value="0x1502" name="AND_REVERSE"/>
@@ -115,7 +115,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	<value value="0x150f" name="SET"/>
 </enum>
 
-<enum name="gl_texgen_mode" inline="yes">
+<enum name="gl_texgen_mode" inline="true">
 	<value value="0x0000" name="FALSE"/>
 	<value value="0x2400" name="EYE_LINEAR"/>
 	<value value="0x2401" name="OBJECT_LINEAR"/>
@@ -124,7 +124,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	<value value="0x8512" name="REFLECTION_MAP"/>
 </enum>
 
-<enum name="nv10_begin_end" inline="yes">
+<enum name="nv10_begin_end" inline="true">
 	<value value="0x0000" name="STOP"/>
 	<value value="0x0001" name="POINTS"/>
 	<value value="0x0002" name="LINES"/>
@@ -138,7 +138,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	<value value="0x000a" name="POLYGON"/>
 </enum>
 
-<enum name="nv10_vtxbuf_type" inline="yes"> <!-- TODO: variants are a wild guess -->
+<enum name="nv10_vtxbuf_type" inline="true"> <!-- TODO: variants are a wild guess -->
 	<value value="0x0000" name="B8G8R8A8_UNORM"/>
 	<value value="0x0001" name="V16_SNORM"/>
 	<value value="0x0002" name="V32_FLOAT"/>
@@ -148,7 +148,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	<value value="0x0007" name="U8_USCALED" variants="NV30_3D-"/>
 </enum>
 
-<enum name="nv4_tex_min_filter" inline="yes">
+<enum name="nv4_tex_min_filter" inline="true">
 	<value value="0x0001" name="NEAREST"/>
 	<value value="0x0002" name="LINEAR"/>
 	<value value="0x0003" name="NEAREST_MIPMAP_NEAREST"/>
@@ -157,12 +157,12 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	<value value="0x0006" name="LINEAR_MIPMAP_LINEAR"/>
 </enum>
 
-<enum name="nv4_tex_mag_filter" inline="yes">
+<enum name="nv4_tex_mag_filter" inline="true">
 	<value value="0x0001" name="NEAREST"/>
 	<value value="0x0002" name="LINEAR"/>
 </enum>
 
-<enum name="nv4_tex_wrap" inline="yes">
+<enum name="nv4_tex_wrap" inline="true">
 	<value value="0x0001" name="REPEAT"/>
 	<value value="0x0002" name="MIRRORED_REPEAT"/>
 	<value value="0x0003" name="CLAMP_TO_EDGE"/>
@@ -173,7 +173,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	<value value="0x0008" name="MIRROR_CLAMP" variants="NV40_3D-"/>
 </enum>
 
-<enum name="nv10_tex_format" inline="yes">
+<enum name="nv10_tex_format" inline="true">
 	<value value="0x0000" name="L8"/>
 	<value value="0x0001" name="I8"/>
 	<value value="0x0002" name="A1R5G5B5"/>
@@ -215,7 +215,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	<value value="0x4c" name="FLOAT_R32_NV" variants="NV30_3D-"/>
 </enum>
 
-<enum name="nv10_rt_color_format" inline="yes">
+<enum name="nv10_rt_color_format" inline="true">
 	<value value="0x0003" name="R5G6B5"/>
 	<value value="0x0005" name="X8R8G8B8"/>
 	<value value="0x0008" name="A8R8G8B8"/>
@@ -228,33 +228,33 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	<value value="0x10" name="A8B8G8R8" variants="NV30_3D-"/>
 </enum>
 
-<enum name="nv10_rt_depth_format" inline="yes">
+<enum name="nv10_rt_depth_format" inline="true">
 	<value value="0x0000" name="Z24S8" variants="NV10_3D-NV17_3D"/>
 	<value value="0x0001" name="Z16"/>
 	<value value="0x0002" name="Z24S8" variants="NV20_3D-"/>
 </enum>
 
-<enum name="nv10_rt_type" inline="yes">
+<enum name="nv10_rt_type" inline="true">
 	<value value="0x0001" name="LINEAR"/>
 	<value value="0x0002" name="SWIZZLED"/>
 </enum>
 
-<enum name="nv10_rc_bias" inline="yes">
+<enum name="nv10_rc_bias" inline="true">
 	<value value="0x0000" name="NONE"/>
 	<value value="0x0001" name="BIAS_BY_NEGATIVE_ONE_HALF"/>
 </enum>
 
-<enum name="nv10_rc_usage_alpha" inline="yes">
+<enum name="nv10_rc_usage_alpha" inline="true">
 	<value value="0x0000" name="BLUE"/>
 	<value value="0x0001" name="ALPHA"/>
 </enum>
 
-<enum name="nv10_rc_usage_rgb" inline="yes">
+<enum name="nv10_rc_usage_rgb" inline="true">
 	<value value="0x0000" name="RGB"/>
 	<value value="0x0001" name="ALPHA"/>
 </enum>
 
-<enum name="nv10_rc_variable" inline="yes">
+<enum name="nv10_rc_variable" inline="true">
 	<value value="0x0000" name="ZERO"/>
 	<value value="0x0001" name="CONSTANT_COLOR0"/>
 	<value value="0x0002" name="CONSTANT_COLOR1"/>
@@ -271,7 +271,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	<value value="0x000f" name="E_TIMES_F"/>
 </enum>
 
-<enum name="nv10_rc_mapping" inline="yes">
+<enum name="nv10_rc_mapping" inline="true">
 	<value value="0x0000" name="UNSIGNED_IDENTITY"/>
 	<value value="0x0001" name="UNSIGNED_INVERT"/>
 	<value value="0x0002" name="EXPAND_NORMAL"/>
@@ -282,7 +282,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	<value value="0x0007" name="SIGNED_NEGATE"/>
 </enum>
 
-<enum name="nv10_rc_scale" inline="yes">
+<enum name="nv10_rc_scale" inline="true">
 	<value value="0x0000" name="NONE"/>
 	<value value="0x0001" name="SCALE_BY_TWO"/>
 	<value value="0x0002" name="SCALE_BY_FOUR"/>
@@ -370,7 +370,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	<bitfield name="E_MAPPING" high="31" low="29" type="nv10_rc_mapping"/>
 </bitset>
 
-<enum name="nv20_point_sprite_r_mode" inline="yes">
+<enum name="nv20_point_sprite_r_mode" inline="true">
 	<value value="0" name="ZERO"/>
 	<value value="1" name="R"/>
 	<value value="2" name="S"/>

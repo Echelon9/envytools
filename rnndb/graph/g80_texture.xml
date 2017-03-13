@@ -8,7 +8,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 <import file="g80_defs.xml"/>
 <import file="nv_defs.xml"/>
 
-<enum name="gk20a_extended_components" inline="yes">
+<enum name="gk20a_extended_components" inline="true">
 	<value value="0" name="NO"/>
 	<value value="1" name="YES"/>
 </enum>
@@ -337,7 +337,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	</value>
 </enum>
 
-<enum name="g80_depth_compare_func" inline="yes">
+<enum name="g80_depth_compare_func" inline="true">
 	<value value="0" name="NEVER"/>
 	<value value="1" name="LESS"/>
 	<value value="2" name="EQUAL"/>
@@ -348,18 +348,18 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	<value value="7" name="ALWAYS"/>
 </enum>
 
-<enum name="g80_tsc_filter" inline="yes">
+<enum name="g80_tsc_filter" inline="true">
 	<value value="1" name="NEAREST" />
 	<value value="2" name="LINEAR" />
 </enum>
 
-<enum name="g80_tsc_mipfilter" inline="yes">
+<enum name="g80_tsc_mipfilter" inline="true">
 	<value value="1" name="NONE" />
 	<value value="2" name="NEAREST" />
 	<value value="3" name="LINEAR" />
 </enum>
 
-<enum name="gk104_float_coord_normalization" inline="yes">
+<enum name="gk104_float_coord_normalization" inline="true">
 	<value value="0" name="USE_HEADER_SETTING" />
 	<value value="1" name="FORCE_UNNORMALIZED_COORDS" />
 </enum>

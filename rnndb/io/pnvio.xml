@@ -8,7 +8,7 @@
 
 <domain name="NV_MMIO" bare="true" prefix="chipset">
 
-	<enum name="g80_auxch_reply" inline="yes">
+	<enum name="g80_auxch_reply" inline="true">
 		<value value="0" name="ACK"/>
 		<value value="1" name="NACK"/>
 		<value value="2" name="DEFER"/>

@@ -32,7 +32,7 @@
 	<bitfield pos="5" name="USER" variants="MCP89:GF100"/>
 </bitset>
 
-<enum name="gk104_pdaemon_pg_state" inline="yes">
+<enum name="gk104_pdaemon_pg_state" inline="true">
 	<value name="DISABLE" value="0" />
 	<value name="ENABLE" value="1" />
 </enum>

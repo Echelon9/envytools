@@ -6,7 +6,7 @@
 
 <import file="graph/nv10_3d.xml"/>
 
-<enum name="nv20_tex_comp" inline="yes">
+<enum name="nv20_tex_comp" inline="true">
 	<value value="0" name="NEVER"/>
 	<value value="1" name="GREATER"/>
 	<value value="2" name="EQUAL"/>
@@ -17,14 +17,14 @@
 	<value value="7" name="ALWAYS"/>
 </enum>
 
-<enum name="nv20_fog_coord" inline="yes">
+<enum name="nv20_fog_coord" inline="true">
 	<value value="0x0001" name="DIST_RADIAL"/>
 	<value value="0x0002" name="DIST_ORTHOGONAL"/>
 	<value value="0x0003" name="DIST_ORTHOGONAL_ABS"/>
 	<value value="0x0006" name="FOG"/>
 </enum>
 
-<enum name="nv20_fog_mode" inline="yes">
+<enum name="nv20_fog_mode" inline="true">
 	<value value="0x0804" name="LINEAR_UNSIGNED"/>
 	<value value="0x2601" name="LINEAR_SIGNED"/>
 	<value value="0x0802" name="EXP_UNSIGNED"/>
@@ -33,36 +33,36 @@
 	<value value="0x0801" name="EXP2_SIGNED"/>
 </enum>
 
-<enum name="nv20_light_viewer" inline="yes">
+<enum name="nv20_light_viewer" inline="true">
 	<value value="0x2" name="NONLOCAL"/>
 	<value value="0x3" name="LOCAL"/>
 </enum>
 
-<enum name="nv20_material_binding" inline="yes">
+<enum name="nv20_material_binding" inline="true">
 	<value value="0x0" name="OFF"/>
 	<value value="0x1" name="COL1"/>
 	<value value="0x2" name="COL2"/>
 </enum>
 
-<enum name="nv20_tex_anisotropy" inline="yes">
+<enum name="nv20_tex_anisotropy" inline="true">
 	<value value="0x0" name="NONE"/>
 	<value value="0x1" name="2X"/>
 	<value value="0x2" name="4X"/>
 	<value value="0x3" name="8X"/>
 </enum>
 
-<enum name="nv20_tex_dims" inline="yes">
+<enum name="nv20_tex_dims" inline="true">
 	<value value="0x0001" name="1D"/>
 	<value value="0x0002" name="2D"/>
 	<value value="0x0003" name="3D"/>
 </enum>
 
-<enum name="nv20_tex_shader_cull_mode" inline="yes">
+<enum name="nv20_tex_shader_cull_mode" inline="true">
 	<value value="0x0000" name="GEQUAL"/>
 	<value value="0x0001" name="LESS"/>
 </enum>
 
-<enum name="nv20_tex_shader_op" inline="yes">
+<enum name="nv20_tex_shader_op" inline="true">
 	<value value="0x0000" name="NONE"/>
 	<value value="0x0001" name="TEXTURE_2D"/>
 	<value value="0x0004" name="PASS_THROUGH"/>
@@ -75,7 +75,7 @@
 	<value value="0x0011" name="DOT_PRODUCT"/>
 </enum>
 
-<enum name="nv20_vtxbuf_type" inline="yes">
+<enum name="nv20_vtxbuf_type" inline="true">
 	<value value="0x0002" name="FLOAT"/>
 	<value value="0x0004" name="UBYTE"/>
 	<value value="0x0005" name="USHORT"/>

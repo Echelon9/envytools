@@ -100,7 +100,7 @@
 	<value value="3" name="131072"/>
 </enum>
 
-<enum name="gf100_ptherm_gate_ctrl_state" inline="yes">
+<enum name="gf100_ptherm_gate_ctrl_state" inline="true">
 	<value name="RUN" value="0" />
 	<value name="AUTO" value="1" />
 	<value name="STOP" value="2" />

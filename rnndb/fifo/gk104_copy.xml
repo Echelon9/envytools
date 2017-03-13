@@ -51,7 +51,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 		<reg32 offset="0x41c" name="Y_COUNT"/>
 		<reg32 offset="0x700" name="CONST0"/>
 		<reg32 offset="0x704" name="CONST1"/>
-		<enum name="gk104_copy_swz" inline="yes">
+		<enum name="gk104_copy_swz" inline="true">
 			<value value="0" name="SRC0"/>
 			<value value="1" name="SRC1"/>
 			<value value="2" name="SRC2"/>

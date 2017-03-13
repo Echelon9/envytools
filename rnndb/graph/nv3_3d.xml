@@ -6,21 +6,21 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 
 <import file="fifo/nv_object.xml"/>
 
-<enum name="nv3_tex_format" inline="yes">
+<enum name="nv3_tex_format" inline="true">
 	<value value="0" name="A1R5G5B5"/>
 	<value value="1" name="X1R5G5B5"/>
 	<value value="2" name="A4R4G4B4"/>
 	<value value="3" name="R5G6B5"/>
 </enum>
 
-<enum name="nv3_wrap_mode" inline="yes">
+<enum name="nv3_wrap_mode" inline="true">
 	<value value="0" name="CYLINDRICAL"/>
 	<value value="1" name="WRAP"/>
 	<value value="2" name="MIRROR"/>
 	<value value="3" name="CLAMP"/>
 </enum>
 
-<enum name="nv3_comparison_op" inline="yes">
+<enum name="nv3_comparison_op" inline="true">
 	<value value="1" name="NEVER"/>
 	<value value="2" name="LESS"/>
 	<value value="3" name="EQUAL"/>
@@ -31,7 +31,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	<value value="8" name="ALWAYS"/>
 </enum>
 
-<enum name="nv3_write_enable" inline="yes">
+<enum name="nv3_write_enable" inline="true">
 	<value value="0" name="NEVER"/>
 	<value value="1" name="ALPHA"/>
 	<value value="2" name="ALPHA_AND_Z_TEST"/>

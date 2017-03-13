@@ -8,7 +8,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 <import file="nv_defs.xml" />
 <import file="graph/nv_3ddefs.xml" />
 
-<enum name="nv4_tex_format" inline="yes">
+<enum name="nv4_tex_format" inline="true">
 	<value value="0x0001" name="Y8"/>
 	<value value="0x0002" name="A1R5G5B5"/>
 	<value value="0x0003" name="X1R5G5B5"/>
@@ -18,25 +18,25 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	<value value="0x0007" name="X8R8G8B8"/>
 </enum>
 
-<enum name="nv4_tex_origin" inline="yes">
+<enum name="nv4_tex_origin" inline="true">
 	<value value="0x0001" name="CENTER"/>
 	<value value="0x0002" name="CORNER"/>
 </enum>
 
-<enum name="nv4_cull_mode" inline="yes">
+<enum name="nv4_cull_mode" inline="true">
 	<value value="0x0" name="BOTH"/>
 	<value value="0x1" name="NONE"/>
 	<value value="0x2" name="CW"/>
 	<value value="0x3" name="CCW"/>
 </enum>
 
-<enum name="nv4_shade_mode" inline="yes">
+<enum name="nv4_shade_mode" inline="true">
 	<value value="0x0001" name="FLAT"/>
 	<value value="0x0002" name="GOURAUD"/>
 	<value value="0x0003" name="PHONG"/>
 </enum>
 
-<enum name="nv4_combine_input" inline="yes">
+<enum name="nv4_combine_input" inline="true">
 	<value value="0x1" name="ZERO"/>
 	<value value="0x2" name="CONSTANT"/>
 	<value value="0x3" name="PRIMARY_COLOR"/>
@@ -46,7 +46,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	<value value="0x7" name="TEXTURELOD"/> <!-- nv10+ -->
 </enum>
 
-<enum name="nv4_combine_map" inline="yes">
+<enum name="nv4_combine_map" inline="true">
 	<value value="0x1" name="IDENTITY"/>
 	<value value="0x2" name="SCALE2"/>
 	<value value="0x3" name="SCALE4"/>
@@ -54,7 +54,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	<value value="0x7" name="BIAS_SCALE2"/>
 </enum>
 
-<enum name="nv4_blend_factor" inline="yes">
+<enum name="nv4_blend_factor" inline="true">
 	<value value="1" name="ZERO"/>
 	<value value="2" name="ONE"/>
 	<value value="3" name="SRC_COLOR"/>
@@ -68,7 +68,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	<value value="0xb" name="SRC_ALPHA_SATURATE"/>
 </enum>
 
-<enum name="nv4_comparison_op" inline="yes">
+<enum name="nv4_comparison_op" inline="true">
 	<value value="1" name="NEVER"/>
 	<value value="2" name="LESS"/>
 	<value value="3" name="EQUAL"/>

@@ -33,7 +33,7 @@
 	<bitfield pos="11" name="UNK11" variants="GF119-"/>
 </bitset>
 
-<enum name="vp3_mode" inline="yes">
+<enum name="vp3_mode" inline="true">
 	<value value="0" name="MPEG1"/>
 	<value value="1" name="MPEG2"/>
 	<value value="2" name="VC1"/>

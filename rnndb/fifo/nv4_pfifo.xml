@@ -6,15 +6,15 @@
 
 <import file="nvchipsets.xml" />
 
-<enum name="nv4_pfifo_channel_mode" inline="yes">
+<enum name="nv4_pfifo_channel_mode" inline="true">
 	<value value="0" name="PIO"/>
 	<value value="1" name="DMA"/>
 </enum>
-<enum name="nv4_pfifo_channel_size" inline="yes">
+<enum name="nv4_pfifo_channel_size" inline="true">
 	<value value="0" name="124"/>
 	<value value="1" name="512"/>
 </enum>
-<enum name="nv4_pfifo_engine" inline="yes">
+<enum name="nv4_pfifo_engine" inline="true">
 	<value value="0" name="SOFTWARE"/>
 	<value value="1" name="PGRAPH"/>
 	<value value="2" name="PMPEG" variants="NV31-"/>

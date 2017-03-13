@@ -41,7 +41,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 		<reg32 offset="0x0318" name="PITCH_OUT" type="int"/>
 		<reg32 offset="0x031c" name="LINE_LENGTH_IN" type="uint"/>
 		<reg32 offset="0x0320" name="LINE_COUNT" type="uint"/>
-		<enum name="nv_m2mf_inc" inline="yes">
+		<enum name="nv_m2mf_inc" inline="true">
 			<value value="1" name="1" />
 			<value value="2" name="2" />
 			<value value="4" name="4" />

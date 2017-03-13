@@ -7,7 +7,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 <import file="nvchipsets.xml"/>
 <import file="g80_defs.xml"/>
 
-<enum name="gm200_tic_header_version" inline="yes">
+<enum name="gm200_tic_header_version" inline="true">
 	<value value="0x0" name="ONE_D_BUFFER"/>
 	<value value="0x1" name="PITCH_COLORKEY"/>
 	<value value="0x2" name="PITCH"/>

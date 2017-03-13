@@ -7,7 +7,7 @@
 <import file="nvchipsets.xml" />
 <import file="g80_defs.xml" />
 
-<enum name="g80_pfifo_engine" inline="yes">
+<enum name="g80_pfifo_engine" inline="true">
 	<value value="0" name="SOFTWARE"/>
 	<value value="1" name="PGRAPH"/>
 	<value value="2" name="PMPEG" variants="G80:G98 G200:MCP77"/>

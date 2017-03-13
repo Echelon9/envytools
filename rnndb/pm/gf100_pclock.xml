@@ -87,7 +87,7 @@
 	</bitfield>
 </bitset>
 
-<enum name="gf100_clk_src_sel" inline="yes">
+<enum name="gf100_clk_src_sel" inline="true">
 	<value value="0" name="DIV"/>
 	<value value="1" name="PLL"/>
 </enum>

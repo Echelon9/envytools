@@ -48,7 +48,7 @@
 	<reg32 offset="0x3826c" name="X2H_INTR_SCRATCH"/>
 	<reg32 offset="0x38270" name="UPARM_PULL_ENABLE" access="w"/> <!-- if this and FIFO_CTRL bit 0 enabled, methods 0x400..0x4fc will be automatically processed by moving the value into UPARM regs -->
 	<reg32 offset="0x382b8" name="SCRATCH" length="5"/>
-	<enum name="nv_vp2_pm_signal" inline="yes">
+	<enum name="nv_vp2_pm_signal" inline="true">
 		<value value="0" name="NOP"/>
 		<value value="1" name="CLEAR"/>
 		<value value="2" name="PULSE"/>

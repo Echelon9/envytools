@@ -5,20 +5,20 @@
 <import file="nv_defs.xml"/>
 <import file="fifo/nv_object.xml"/>
 
-<enum name="nv30_tex_swz_src" inline="yes">
+<enum name="nv30_tex_swz_src" inline="true">
 	<value value="0" name="ZERO"/>
 	<value value="1" name="ONE"/>
 	<value value="2" name="S1"/>
 </enum>
 
-<enum name="nv30_tex_swz_comp" inline="yes">
+<enum name="nv30_tex_swz_comp" inline="true">
 	<value value="0" name="W"/>
 	<value value="1" name="Z"/>
 	<value value="2" name="Y"/>
 	<value value="3" name="X"/>
 </enum>
 
-<enum name="nv30_tex_comp" inline="yes">
+<enum name="nv30_tex_comp" inline="true">
 	<value value="0" name="NEVER"/>
 	<value value="1" name="GREATER"/>
 	<value value="2" name="EQUAL"/>
@@ -29,25 +29,25 @@
 	<value value="7" name="ALWAYS"/>
 </enum>
 
-<enum name="nv30_tex_aniso" inline="yes">
+<enum name="nv30_tex_aniso" inline="true">
 	<value value="0" name="NONE"/>
 	<value value="1" name="2X"/>
 	<value value="2" name="4X"/>
 	<value value="3" name="8X"/>
 </enum>
 
-<enum name="nv30_tex_dims" inline="yes">
+<enum name="nv30_tex_dims" inline="true">
 	<value value="1" name="1D"/>
 	<value value="2" name="2D"/>
 	<value value="3" name="3D"/>
 </enum>
 
-<enum name="nv30_idxbuf_type" inline="yes">
+<enum name="nv30_idxbuf_type" inline="true">
 	<value value="0" name="U32"/>
 	<value value="1" name="U16"/>
 </enum>
 
-<enum name="nv40_tex_format" inline="yes">
+<enum name="nv40_tex_format" inline="true">
 	<value value="0x01" name="L8"/>
 	<value value="0x02" name="A1R5G5B5"/>
 	<value value="0x03" name="A4R4G4B4"/>
@@ -66,14 +66,14 @@
 	<value value="0x1b" name="RGBA32F"/>
 </enum>
 
-<enum name="nv40_tex_aniso_mip_filter_optimization" inline="yes">
+<enum name="nv40_tex_aniso_mip_filter_optimization" inline="true">
 	<value value="0" name="OFF"/>
 	<value value="2" name="QUALITY"/>
 	<value value="3" name="PERFORMANCE"/>
 	<value value="7" name="HIGH_PERFORMANCE"/>
 </enum>
 
-<enum name="nv40_tex_gamma_decrease_filter" inline="yes">
+<enum name="nv40_tex_gamma_decrease_filter" inline="true">
 	<value value="0" name="NONE"/>
 	<value value="1" name="RED"/>
 	<value value="2" name="GREEN"/>
@@ -81,7 +81,7 @@
 	<value value="15" name="ALL"/>
 </enum>
 
-<enum name="nv40_trilinear_optimization" inline="yes">
+<enum name="nv40_trilinear_optimization" inline="true">
 	<value value="0x00" name="OFF"/>
 	<value value="0x04" name="HIGH_QUALITY"/>
 	<value value="0x06" name="QUALITY"/>
@@ -89,20 +89,20 @@
 	<value value="0x18" name="HIGH_PERFORMANCE"/>
 </enum>
 
-<enum name="nv40_aniso_sample_optimization" inline="yes">
+<enum name="nv40_aniso_sample_optimization" inline="true">
 	<value value="0" name="OFF"/>
 	<value value="3" name="HIGH_QUALITY"/>
 	<value value="7" name="QUALITY"/>
 	<value value="5" name="PERFORMANCE"/>
 </enum>
 
-<enum name="nv40_unknown_optimization" inline="yes">
+<enum name="nv40_unknown_optimization" inline="true">
 	<value value="0x00" name="OFF"/>
 	<value value="0x0b" name="PARTIAL"/>
 	<value value="0x1f" name="FULL"/>
 </enum>
 
-<enum name="nv40_tex_aniso" inline="yes">
+<enum name="nv40_tex_aniso" inline="true">
 	<value value="0" name="NONE"/>
 	<value value="1" name="2X"/>
 	<value value="2" name="4X"/>

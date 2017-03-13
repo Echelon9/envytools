@@ -130,7 +130,7 @@
 				<value value="1" name="TIMER"/>
 			</bitfield>
 		</reg32>
-		<enum name="gt215_pcopy_swizzle" inline="yes">
+		<enum name="gt215_pcopy_swizzle" inline="true">
 			<value value="0x0" name="SRC_0"/>
 			<value value="0x1" name="SRC_1"/>
 			<value value="0x2" name="SRC_2"/>

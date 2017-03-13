@@ -30,7 +30,7 @@
 		<bitfield pos="13" name="UNK13_MEMIF"/>
 		<bitfield pos="14" name="UNK14_MEMIF"/>
 	</reg32>
-	<enum name="gf100_ctxctl_isrc" inline="yes">
+	<enum name="gf100_ctxctl_isrc" inline="true">
 		<!-- ENGINE_STATUS on HUB, ??? on GPC -->
 		<value value="0x00" name="HUB_CHSW_PENDING"/>
 		<value value="0x01" name="HUB_CHAN_VALID"/>

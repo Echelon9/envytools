@@ -26,7 +26,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	<!-- 31 unk -->
 </bitset>
 
-<enum name="g80_mem_target" inline="yes">
+<enum name="g80_mem_target" inline="true">
 	<value value="0" name="VRAM"/>
 	<!-- 1 is some other sysram. -->
 	<value value="2" name="SYSRAM"/>
@@ -54,7 +54,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	<value value="7" name="PAUSED"/>
 </enum>
 
-<enum name="g80_cond_mode" inline="yes">
+<enum name="g80_cond_mode" inline="true">
 	<value value="0" name="NEVER"/>
 	<value value="1" name="ALWAYS"/>
 	<value value="2" name="RES_NON_ZERO"/>
@@ -63,7 +63,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	<value value="4" name="NOT_EQUAL"/>
 </enum>
 
-<enum name="g80_reg_mode" inline="yes">
+<enum name="g80_reg_mode" inline="true">
 	<brief>selects how $r regs are layed out inside the MP.</brief>
 	<value value="0x01" name="PACKED">
 		<doc>limits lanes/warp to 16 as a side effect.</doc>
@@ -71,7 +71,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	<value value="0x02" name="STRIPED"/>
 </enum>
 
-<enum name="g80_msaa_mode" inline="yes">
+<enum name="g80_msaa_mode" inline="true">
 	<value value="0x00" name="1X1"/>
 	<value value="0x01" name="2X1"/>
 	<value value="0x02" name="2X2"/>
@@ -109,7 +109,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	<value value="7" name="FLOAT"/>
 </enum>
 
-<enum name="g80_texture_type" inline="yes">
+<enum name="g80_texture_type" inline="true">
 	<value value="0" name="ONE_D"/>
 	<value value="1" name="TWO_D"/>
 	<value value="2" name="THREE_D"/>
@@ -121,7 +121,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	<value value="8" name="CUBE_ARRAY"/>
 </enum>
 
-<enum name="g80_gobs_per_block" inline="yes">
+<enum name="g80_gobs_per_block" inline="true">
 	<value value="0x0" name="ONE"/>
 	<value value="0x1" name="TWO"/>
 	<value value="0x2" name="FOUR"/>
@@ -130,14 +130,14 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	<value value="0x5" name="THIRTYTWO"/>
 </enum>
 
-<enum name="g80_sector_promotion" inline="yes">
+<enum name="g80_sector_promotion" inline="true">
 	<value value="0" name="NO_PROMOTION"/>
 	<value value="1" name="PROMOTE_TO_2_V"/>
 	<value value="2" name="PROMOTE_TO_2_H"/>
 	<value value="3" name="PROMOTE_TO_4"/>
 </enum>
 
-<enum name="g80_lod_quality" inline="yes">
+<enum name="g80_lod_quality" inline="true">
 	<brief>how accurate an estimate of footprint size do we want?</brief>
 	<value value="0x0" name="LOW">
 		<doc>use 2 vectors for a low quality estimate</doc>
@@ -147,7 +147,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	</value>
 </enum>
 
-<enum name="g80_aniso_spread_func" inline="yes">
+<enum name="g80_aniso_spread_func" inline="true">
 	<doc>rule for bilinear sample (bilerp) spacing during anisotropic filtering. Wider spread &amp; fewer bilerps is typically faster, but lower quality</doc>
 	<value value="0" name="HALF">
 		<doc>spread = 2^-distance (i.e. spread goes from 1 down to 0.5)</doc>
@@ -163,7 +163,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	</value>
 </enum>
 
-<enum name="g80_aniso_spread_modifier" inline="yes">
+<enum name="g80_aniso_spread_modifier" inline="true">
 	<value value="0x0" name="NONE">
 		<doc>no modification, just sample entire footprint (nv3x)</doc>
 	</value>
@@ -480,17 +480,17 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	</value>
 </enum>
 
-<enum name="g80_clip_distance_mode" inline="yes">
+<enum name="g80_clip_distance_mode" inline="true">
 	<value value="0" name="CLIP"/>
 	<value value="1" name="CULL"/>
 </enum>
 
-<enum name="g80_mp_pm_mode" inline="yes">
+<enum name="g80_mp_pm_mode" inline="true">
 	<value value="0" name="LOGOP"/>
 	<value value="1" name="LOGOP_PULSE"/>
 </enum>
 
-<enum name="g80_mp_pm_unit" inline="yes">
+<enum name="g80_mp_pm_unit" inline="true">
 	<value value="0" name="UNK0"/>
 	<value value="1" name="UNK1"/>
 	<value value="2" name="UNK2"/>
@@ -499,7 +499,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	<value value="5" name="UNK5"/>
 </enum>
 
-<enum name="gk104_mp_pm_mode" inline="yes">
+<enum name="gk104_mp_pm_mode" inline="true">
 	<value value="0" name="LOGOP"/>
 	<value value="1" name="LOGOP_PULSE"/>
 	<value value="2" name="B6"/>
@@ -511,7 +511,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	<value value="8" name="UNK8"/><!-- same as 0 ? -->
 </enum>
 
-<enum name="gk104_mp_pm_siggroup_a" inline="yes">
+<enum name="gk104_mp_pm_siggroup_a" inline="true">
 	<value value="0x0" name="NONE"/>
 	<value value="0x1" name="USER"/><!-- 0..7: prof_trigger_00..07 -->
 	<value value="0x3" name="LAUNCH"/><!-- 1: warps_launched; 2..7: threads_launched bits 0..5(1..6) ? -->
@@ -520,7 +520,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	<value value="0x1b" name="LDST"/><!-- 0,1: shared_ld,st; 2,3: local_ld,st; 4,5: gld,gst_request  -->
 	<value value="0x1c" name="BRANCH"/><!-- 3: branch; 4: divergent_branch -->
 </enum>
-<enum name="gk104_mp_pm_siggroup_b" inline="yes">
+<enum name="gk104_mp_pm_siggroup_b" inline="true">
 	<value value="0x0" name="NONE"/>
 	<value value="0x2" name="WARP"/><!-- 0: active_cycles; 1..6: active_warps bits 0..5(1..6?); 7: sm_cta_launched -->
 	<value value="0x8" name="REPLAY"/><!-- 2,3: shared_replay_ld,st; 4,5: global_mem_divergence_replays_ld,st -->

@@ -223,8 +223,8 @@ Enum is, basically, a set of values. They're defined by <enum> tag with the
 following attributes:
 
  - name [required]: an identifying name.
- - inline [optional]: "yes" or "no", with "no" being the default. Selects if
-   this enum should emit its own definitions in .h file, or be inlined into
+ - inline [optional]: "true" or "false", with "false" being the default. Selects
+   if this enum should emit its own definitions in .h file, or be inlined into
    any <reg*> / <bitfield> definitions that reference it.
  - bare [optional]: only for no-inline enums, behaves like bare attribute
    to <domain>
@@ -247,7 +247,7 @@ tags can also be written directly inside <reg*> tag.
 	<value value="0x12" name="A8R8G8B8_RECT" variants="NV10-" />
 </enum>
 
-<enum name="gl_shade_model" inline="yes">
+<enum name="gl_shade_model" inline="true">
 	<value value="0x1d00" name="FLAT" />
 	<value value="0x1d01" name="SMOOTH" />
 </enum>
@@ -358,7 +358,7 @@ bitfield contains any <value>s, <bitfield>s, or references an inlined
 enum/bitset, defines for them are also generated, pre-shifted to the correct
 position. Example:
 
-<enum name="nv03_operation" inline="yes">
+<enum name="nv03_operation" inline="true">
 	<value value="0" name="SRCCOPY_AND" />	
 	<value value="1" name="ROP_AND" />	
 	<value value="2" name="BLEND_AND" />	

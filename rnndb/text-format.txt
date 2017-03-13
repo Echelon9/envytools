@@ -55,7 +55,7 @@ These sequences are recognized and extracted before matching the line format:
 
 inline
 	at the beginning of the line
-	inline="yes" attribute
+	inline="true" attribute
 
 2.4. Line patterns
 

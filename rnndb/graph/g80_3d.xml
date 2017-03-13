@@ -16,7 +16,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	<bitfield pos="3" name="W"/>
 </bitset>
 
-<enum name="g80_vtxelt_type" inline="yes">
+<enum name="g80_vtxelt_type" inline="true">
 	<!-- converted to float -->
 	<value value="1" name="SNORM"/>
 	<value value="2" name="UNORM"/>
@@ -28,7 +28,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	<value value="7" name="FLOAT"/>
 </enum>
 
-<enum name="g80_vtxelt_format" inline="yes">
+<enum name="g80_vtxelt_format" inline="true">
 	<value value="0x01" name="32_32_32_32"/>
 	<value value="0x02" name="32_32_32"/>
 	<value value="0x03" name="16_16_16_16"/>

@@ -9,7 +9,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 <import file="graph/nv1_2d.xml" />
 <import file="graph/nv1_ctxobj.xml" />
 
-<enum name="nv1_ifc_color_format" inline="yes">
+<enum name="nv1_ifc_color_format" inline="true">
 	<value value="1" name="Y8"/>
 	<value value="2" name="A1R5G5B5"/>
 	<value value="3" name="X1R5G5B5"/>
@@ -17,7 +17,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	<value value="5" name="X8R8G8B8"/>
 </enum>
 
-<enum name="nv4_ifc_color_format" inline="yes">
+<enum name="nv4_ifc_color_format" inline="true">
 	<value value="1" name="R5G6B5"/>
 	<value value="2" name="A1R5G5B5"/>
 	<value value="3" name="X1R5G5B5"/>

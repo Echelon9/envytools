@@ -115,7 +115,7 @@
 			<bitfield low="12" high="14" name="VC1_MBMODETAB"/>
 			<bitfield pos="16" name="VC1_TRANSDCTAB"/>
 			<bitfield pos="17" name="UNK17"/>
-			<enum name="pvld_vc1_transacfrm" inline="yes">
+			<enum name="pvld_vc1_transacfrm" inline="true">
 				<value value="0" name="HIGH_RATE"/> <!-- tables 219-232 -->
 				<value value="1" name="LOW_MOTION"/> <!-- tables 191-204 -->
 				<value value="2" name="HIGH_MOTION"/> <!-- tables 177-190 -->

@@ -10,7 +10,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 <import file="g80_defs.xml"/>
 <import file="graph/gk104_p2mf.xml"/>
 
-<enum name="gf100_vtxelt_type" inline="yes">
+<enum name="gf100_vtxelt_type" inline="true">
 	<value value="1" name="SNORM"/>
 	<value value="2" name="UNORM"/>
 	<value value="3" name="SINT"/><!-- no conversion (as in glVertexAttribIPointer) -->
@@ -21,7 +21,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 </enum>
 
 <!-- 64 bit sizes use 2 attribute slots -->
-<enum name="gf100_vtxelt_size" inline="yes">
+<enum name="gf100_vtxelt_size" inline="true">
 	<value value="0x01" name="32_32_32_32"/>
 	<value value="0x02" name="32_32_32"/>
 	<value value="0x03" name="16_16_16_16"/>

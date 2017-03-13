@@ -7,19 +7,19 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 <import file="nv_defs.xml" />
 <import file="fifo/nv_object.xml" />
 
-<enum name="nv1_ctx_color_format" inline="yes">
+<enum name="nv1_ctx_color_format" inline="true">
 	<value value="1" name="X16A8Y8"/>
 	<value value="2" name="X16A1R5G5B5"/>
 	<value value="3" name="A8R8G8B8"/>
 </enum>
 
-<enum name="nv4_ctx_color_format" inline="yes">
+<enum name="nv4_ctx_color_format" inline="true">
 	<value value="1" name="A16R5G6B5"/>
 	<value value="2" name="X16A1R5G5B5"/>
 	<value value="3" name="A8R8G8B8"/>
 </enum>
 
-<enum name="nv4_surface2d_format" inline="yes">
+<enum name="nv4_surface2d_format" inline="true">
 	<brief>For surf2d and swzsurf</brief>
 	<value value="0x1" name="Y8"/>
 	<value value="0x2" name="X1R5G5B5_Z1R5G5B5"/> <!-- XXX check [2] -->
@@ -34,7 +34,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	<value value="0xb" name="Y32"/>
 </enum>
 
-<enum name="nv4_bitmap_format" inline="yes">
+<enum name="nv4_bitmap_format" inline="true">
 	<value value="1" name="CGA6"/>
 	<value value="2" name="LE"/>
 </enum>

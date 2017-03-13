@@ -4,7 +4,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 <import file="copyright.xml"/>
 
-<enum name="GF100_SHADER_KIND" inline="no">
+<enum name="GF100_SHADER_KIND" inline="false">
 	<value value="0" name="VP_A"/>
 	<value value="1" name="VP_B"/>
 	<value value="2" name="TCP"/>
@@ -20,7 +20,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	<bitfield pos="3" name="A"/>
 </bitset>
 
-<enum name="GF100_INTERP_MODE" inline="no">
+<enum name="GF100_INTERP_MODE" inline="false">
 	<value value="0" name="DISABLED"/>
 	<value value="1" name="FLAT"/>
 	<value value="2" name="PERSPECTIVE"/>

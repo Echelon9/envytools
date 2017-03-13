@@ -8,28 +8,28 @@
 <import file="graph/nv_3ddefs.xml"/>
 <import file="fifo/nv_object.xml"/>
 
-<enum name="nv10_fog_coord" inline="yes">
+<enum name="nv10_fog_coord" inline="true">
 	<value value="0x0000" name="FOG"/>
 	<value value="0x0001" name="DIST_RADIAL"/>
 	<value value="0x0002" name="DIST_ORTHOGONAL"/>
 	<value value="0x0003" name="DIST_ORTHOGONAL_ABS"/>
 </enum>
 
-<enum name="nv10_fog_mode" inline="yes">
+<enum name="nv10_fog_mode" inline="true">
 	<value value="0x2601" name="LINEAR"/>
 	<value value="0x0800" name="EXP"/>
 	<value value="0x0802" name="EXP_ABS"/>
 	<value value="0x0803" name="EXP2"/>
 </enum>
 
-<enum name="nv10_light_source_mode" inline="yes">
+<enum name="nv10_light_source_mode" inline="true">
 	<value value="0x0" name="DISABLED"/>
 	<value value="0x1" name="NONPOSITIONAL"/>
 	<value value="0x2" name="POSITIONAL"/>
 	<value value="0x3" name="DIRECTIONAL"/>
 </enum>
 
-<enum name="nv10_tex_cull_mode" inline="yes">
+<enum name="nv10_tex_cull_mode" inline="true">
 	<value value="0x0000" name="DISABLED"/>
 	<value value="0x0003" name="TEST_ALL"/>
 	<value value="0x0004" name="TEST_ALPHA"/>

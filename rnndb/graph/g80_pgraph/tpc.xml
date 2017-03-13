@@ -13,7 +13,7 @@
 </group>
 
 <group name="g80_pgraph_tpc_geom">
-	<enum name="g80_tpc_geom_pm_sel" inline="yes">
+	<enum name="g80_tpc_geom_pm_sel" inline="true">
 		<value value="0x2d" name="CG_IFACE_DISABLE"/> <!-- G80 -->
 	</enum>
 	<reg32 offset="0x0c" name="PM_0">

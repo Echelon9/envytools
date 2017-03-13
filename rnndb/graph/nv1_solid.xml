@@ -8,14 +8,14 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 <import file="fifo/nv_object.xml" />
 <import file="graph/nv1_2d.xml" />
 
-<enum name="nv1_solid_color_format" inline="yes">
+<enum name="nv1_solid_color_format" inline="true">
 	<value value="1" name="X24Y8"/>
 	<value value="2" name="X17R5G5B5"/>
 	<value value="3" name="X8R8G8B8"/>
 	<value value="4" name="X16Y16"/>
 </enum>
 
-<enum name="nv4_solid_color_format" inline="yes">
+<enum name="nv4_solid_color_format" inline="true">
 	<value value="1" name="X16R5G6B5"/>
 	<value value="2" name="X17R5G5B5"/>
 	<value value="3" name="X8R8G8B8"/>

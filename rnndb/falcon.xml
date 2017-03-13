@@ -108,7 +108,7 @@
 		<bitfield pos="16" name="WRCACHE_FLUSH"/>
 		<bitfield pos="17" name="PM_TRIGGER"/>
 	</reg32>
-	<enum name="falcon_pm_mode" inline="yes">
+	<enum name="falcon_pm_mode" inline="true">
 		<value value="0" name="PULSE"/>
 		<value value="1" name="CONTINUOUS"/>
 	</enum>

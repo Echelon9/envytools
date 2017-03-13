@@ -10,7 +10,7 @@
 
 <domain name="NV_MMIO" bare="true" prefix="chipset">
 
-<enum name="gf100_pfifo_engine" inline="yes">
+<enum name="gf100_pfifo_engine" inline="true">
 	<value value="0" name="PGRAPH"/>
 	<value value="1" name="PPDEC" variants="GF100:GM107"/>
 	<value value="2" name="PPPP" variants="GF100:GM107"/>

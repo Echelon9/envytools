@@ -8,7 +8,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 <import file="fifo/nv_object.xml" />
 <import file="graph/nv1_solid.xml" />
 
-<enum name="nv3_gdi_color_format" inline="yes">
+<enum name="nv3_gdi_color_format" inline="true">
 	<value value="1" name="X24Y8"/>
 	<value value="2" name="X17R5G5B5"/>
 	<value value="3" name="X8R8G8B8"/>
