@@ -41,6 +41,7 @@
 	<element name="brief" type="rng:briefType" />
 	
 	<element name="doc"  type="rng:docType" />
+	<element name="p"    type="rng:textformatType" />
 	<element name="b"    type="rng:textformatType" />
 	<element name="i"    type="rng:textformatType" />
 	<element name="u"    type="rng:textformatType" />
@@ -256,7 +257,7 @@
 	<complexType name="textformatType" mixed="true">
 		<annotation>
 			<documentation>
-				for bold, underline, italics
+				for paragraph, bold, underline, italics
 			</documentation>
 		</annotation>
 		<choice minOccurs="0" maxOccurs="unbounded">
@@ -373,6 +374,7 @@
 	
 	<group name="textformatGroup">
 		<choice>
+			<element ref="rng:p" />
 			<element ref="rng:b" />
 			<element ref="rng:i" />
 			<element ref="rng:u" />
