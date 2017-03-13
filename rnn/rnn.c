@@ -113,9 +113,9 @@ static char *getattrib (struct rnndb *db, char *file, int line, xmlAttr *attr) {
 
 static int getboolattrib (struct rnndb *db, char *file, int line, xmlAttr *attr) {
 	char *c = getattrib(db, file, line, attr);
-	if (!strcmp(c, "yes") || !strcmp(c, "1"))
+	if (!strcmp(c, "true") || !strcmp(c, "yes") || !strcmp(c, "1"))
 		return 1;
-	if (!strcmp(c, "no") || !strcmp(c, "0"))
+	if (!strcmp(c, "false") || !strcmp(c, "no") || !strcmp(c, "0"))
 		return 0;
 	fprintf (stderr, "%s:%d: invalid boolean value \"%s\" in attribute \"%s\"\n", file, line, c, attr->name);
 	db->estatus = 1;

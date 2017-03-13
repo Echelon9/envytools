@@ -509,9 +509,9 @@ def getattrs(node, attrs, db, file):
     return res
 
 def tobool(x):
-    if x in ['yes', '1']:
+    if x in ['true', 'yes', '1']:
         return True
-    elif x in [None, 'no', '0']:
+    elif x in [None, 'false', 'no', '0']:
         return False
     raise TypeError("invalid boolean value")
 
