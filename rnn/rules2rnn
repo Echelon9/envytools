@@ -444,7 +444,7 @@ for stripeobj in stripeobjs:
 
 	if stripeobj.objsuper:
 		objenum = ET.Element("enum")
-		objenum.attrib["bare"] = "yes"
+		objenum.attrib["bare"] = "true"
 		objenum.attrib["name"] = "obj-class"
 
 		for objname, objclass in objclasses:

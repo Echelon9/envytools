@@ -264,7 +264,7 @@ for filename, tclnames in [("nv10-20tcl", ("NV10TCL", "NV20TCL")), ("nv30-40tcl"
 	database.attrib["xsi" + colon + "schemaLocation"] = "http://nouveau.freedesktop.org/ rules-ng.xsd"
 
 	objenum = ET.Element("enum")
-	objenum.attrib["bare"] = "yes"
+	objenum.attrib["bare"] = "true"
 	objenum.attrib["name"] = "obj-class"
 
 	for tcl in alltcls:
