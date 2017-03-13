@@ -169,6 +169,7 @@
 		<attribute name="inline" type="boolean" use="optional" />
 		<attribute name="bare" type="boolean" use="optional" />
 		<attribute name="prefix" type="NMTOKENS" use="optional" />
+		<attribute name="varset" type="NMTOKEN" use="optional" />
 	</complexType>
 
 	<complexType name="bitfieldType">
