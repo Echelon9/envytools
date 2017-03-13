@@ -13,7 +13,7 @@
 	<reg32 offset="0x074" name="UNK074"/> <!-- 40404040/ffffffff -->
 </array>
 
-<bitset name="pvpe_dma" inline="yes">
+<bitset name="pvpe_dma" inline="true">
 	<bitfield low="0" high="15" name="INSTANCE"/>
 	<bitfield pos="31" name="VALID"/>
 </bitset>

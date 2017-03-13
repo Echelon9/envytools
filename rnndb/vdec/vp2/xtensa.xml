@@ -7,7 +7,7 @@
 <import file="nvchipsets.xml" />
 <import file="g80_defs.xml" />
 
-<bitset name="g84_vp2_target" inline="yes">
+<bitset name="g84_vp2_target" inline="true">
 	<bitfield low="0" high="3" name="DMAIDX"/>
 	<bitfield pos="4" name="MODE">
 		<value value="0" name="DMAOBJ"/>
@@ -72,7 +72,7 @@
 </group>
 
 <group name="g84_xtensa_common">
-	<bitset name="g84_xtensa_intr" inline="yes">
+	<bitset name="g84_xtensa_intr" inline="true">
 		<bitfield pos="2" name="X2H"/>
 		<bitfield pos="3" name="VM_FAULT"/>
 		<bitfield pos="4" name="WATCHDOG"/>

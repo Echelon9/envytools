@@ -174,7 +174,7 @@
 			<bitfield pos="10" name="PENDING_UNK10"/>
 			<bitfield pos="11" name="PENDING_UNK11"/>
 		</reg32>
-		<bitset name="gt215_copy_intr" inline="yes">
+		<bitset name="gt215_copy_intr" inline="true">
 			<bitfield pos="0" name="COPY_BLOCK"/>
 			<bitfield pos="1" name="COPY_NONBLOCK"/>
 			<bitfield pos="2" name="CTRL" variants="GK104-"/>

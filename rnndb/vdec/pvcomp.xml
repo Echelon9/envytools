@@ -54,7 +54,7 @@
 			<bitfield low="0" high="11" name="UNK0"/>
 			<bitfield low="16" high="27" name="UNK16"/>
 		</reg32>
-		<bitset name="vcomp_intr" inline="yes">
+		<bitset name="vcomp_intr" inline="true">
 			<bitfield pos="0" name="UC_USER"/>
 			<bitfield pos="1" name="UNK1"/>
 			<bitfield pos="2" name="UNK2"/>

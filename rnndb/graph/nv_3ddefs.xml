@@ -289,7 +289,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	<value value="0x0003" name="SCALE_BY_ONE_HALF"/>
 </enum>
 
-<bitset name="nv10_rc_in_alpha" inline="yes">
+<bitset name="nv10_rc_in_alpha" inline="true">
 	<bitfield name="D_INPUT" high="3" low="0" type="nv10_rc_variable"/>
 	<bitfield name="D_COMPONENT_USAGE" pos="4" type="nv10_rc_usage_alpha"/>
 	<bitfield name="D_MAPPING" high="7" low="5" type="nv10_rc_mapping"/>
@@ -304,7 +304,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	<bitfield name="A_MAPPING" high="31" low="29" type="nv10_rc_mapping"/>
 </bitset>
 
-<bitset name="nv10_rc_in_rgb" inline="yes">
+<bitset name="nv10_rc_in_rgb" inline="true">
 	<bitfield name="D_INPUT" high="3" low="0" type="nv10_rc_variable"/>
 	<bitfield name="D_COMPONENT_USAGE" pos="4" type="nv10_rc_usage_rgb"/>
 	<bitfield name="D_MAPPING" high="7" low="5" type="nv10_rc_mapping"/>
@@ -319,7 +319,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	<bitfield name="A_MAPPING" high="31" low="29" type="nv10_rc_mapping"/>
 </bitset>
 
-<bitset name="nv10_rc_out" inline="yes">
+<bitset name="nv10_rc_out" inline="true">
 	<bitfield name="CD_OUTPUT" high="3" low="0" type="nv10_rc_variable"/>
 	<bitfield name="AB_OUTPUT" high="7" low="4" type="nv10_rc_variable"/>
 	<bitfield name="SUM_OUTPUT" high="11" low="8" type="nv10_rc_variable"/>
@@ -330,7 +330,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	<bitfield name="SCALE" high="17" low="16" type="nv10_rc_scale"/>
 </bitset>
 
-<bitset name="nv10_rc_out_op" inline="yes">
+<bitset name="nv10_rc_out_op" inline="true">
 	<bitfield name="CD_OUTPUT" high="3" low="0" type="nv10_rc_variable"/>
 	<bitfield name="AB_OUTPUT" high="7" low="4" type="nv10_rc_variable"/>
 	<bitfield name="SUM_OUTPUT" high="11" low="8" type="nv10_rc_variable"/>
@@ -342,7 +342,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	<bitfield name="OPERATION" high="29" low="27" type="int"/>
 </bitset>
 
-<bitset name="nv10_rc_final0" inline="yes">
+<bitset name="nv10_rc_final0" inline="true">
 	<bitfield name="D_INPUT" high="3" low="0" type="nv10_rc_variable"/>
 	<bitfield name="D_COMPONENT_USAGE" pos="4" type="nv10_rc_usage_rgb"/>
 	<bitfield name="D_MAPPING" high="7" low="5" type="nv10_rc_mapping"/>
@@ -357,7 +357,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	<bitfield name="A_MAPPING" high="31" low="29" type="nv10_rc_mapping"/>
 </bitset>
 
-<bitset name="nv10_rc_final1" inline="yes">
+<bitset name="nv10_rc_final1" inline="true">
 	<bitfield name="COLOR_SUM_CLAMP" pos="7" type="boolean"/>
 	<bitfield name="G_INPUT" high="11" low="8" type="nv10_rc_variable"/>
 	<bitfield name="G_COMPONENT_USAGE" pos="12" type="nv10_rc_usage_rgb"/>

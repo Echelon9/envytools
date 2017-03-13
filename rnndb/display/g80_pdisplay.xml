@@ -127,7 +127,7 @@
 
 		<reg32 offset="0x0010" name="OBJECTS"/>
 
-		<bitset name="g80_pdisplay_intr_0" inline="yes">
+		<bitset name="g80_pdisplay_intr_0" inline="true">
 			<bitfield pos="0" name="UNK0"/>
 			<bitfield pos="1" name="UNK1"/>
 			<bitfield pos="2" name="UNK2"/>
@@ -145,7 +145,7 @@
 			<bitfield pos="23" name="FIFO_ERR_CURSOR_0"/>
 			<bitfield pos="24" name="FIFO_ERR_CURSOR_1"/>
 		</bitset>
-		<bitset name="g80_pdisplay_intr_1" inline="yes">
+		<bitset name="g80_pdisplay_intr_1" inline="true">
 			<bitfield pos="2" name="VBLANK_HEAD_0"/>
 			<bitfield pos="3" name="VBLANK_HEAD_1"/>
 			<bitfield pos="4" name="CLK_UNK0"/>
@@ -386,7 +386,7 @@
 		</stripe>
 
 		<stripe variants="GF119-">
-			<bitset name="gf119_pdisplay_intr_summary" inline="yes">
+			<bitset name="gf119_pdisplay_intr_summary" inline="true">
 				<bitfield pos="0" name="FIFO_UNK0"/>
 				<bitfield pos="1" name="FIFO_ERR"/>
 				<bitfield pos="2" name="INTR_4"/>
@@ -397,7 +397,7 @@
 				<bitfield pos="26" name="HEAD_2"/>
 				<bitfield pos="27" name="HEAD_3"/>
 			</bitset>
-			<bitset name="gf119_pdisplay_intr_fifo" inline="yes">
+			<bitset name="gf119_pdisplay_intr_fifo" inline="true">
 				<bitfield pos="0" name="MASTER"/>
 				<bitfield pos="1" name="FLIP_0"/>
 				<bitfield pos="2" name="FLIP_1"/>
@@ -416,7 +416,7 @@
 				<bitfield pos="15" name="CURSOR_2"/>
 				<bitfield pos="16" name="CURSOR_3"/>
 			</bitset>
-			<bitset name="gf119_pdisplay_intr_2" inline="yes">
+			<bitset name="gf119_pdisplay_intr_2" inline="true">
 				<bitfield pos="0" name="CLK_UNK0"/>
 				<bitfield pos="1" name="CLK_UNK1"/>
 				<bitfield pos="2" name="CLK_UNK2"/>
@@ -426,7 +426,7 @@
 				<bitfield pos="29" name="UNK29"/> <!-- cannot be directed nor redirected to PDISPLAY.DAEMON -->
 				<bitfield pos="31" name="MMIO_FAULT"/>
 			</bitset>
-			<bitset name="gf119_pdisplay_intr_head" inline="yes">
+			<bitset name="gf119_pdisplay_intr_head" inline="true">
 				<bitfield pos="0" name="VBLANK"/>
 				<bitfield pos="1" name="UNK1"/>
 				<bitfield pos="2" name="UNK2" variants="GK104-"/>
@@ -450,7 +450,7 @@
 				<bitfield pos="30" name="UNK30"/>
 				<bitfield pos="31" name="UNK31"/>
 			</bitset>
-			<bitset name="gf119_pdisplay_intr_4" inline="yes">
+			<bitset name="gf119_pdisplay_intr_4" inline="true">
 				<!-- 0-7, 16-19 -->
 			</bitset>
 			<reg32 offset="0x058" name="INTR_SUMMARY" type="gf119_pdisplay_intr_summary"/>
@@ -543,11 +543,11 @@
 		</stripe>
 
 		<array offset="0x4000" name="CLOCK" stride="0x2000" length="1">
-			<bitset name="g80_vpll_s1" inline="yes">
+			<bitset name="g80_vpll_s1" inline="true">
 				<bitfield low="0" high="7" name="N1"/>
 				<bitfield low="16" high="23" name="M1"/>
 			</bitset>
-			<bitset name="g80_vpll_s2" inline="yes">
+			<bitset name="g80_vpll_s2" inline="true">
 				<bitfield low="0" high="7" name="N2"/>
 				<bitfield low="16" high="23" name="M2"/>
 				<bitfield low="28" high="30" name="P"/>

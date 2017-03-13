@@ -362,7 +362,7 @@
 		<!-- D3D: TEX_FILTER -->
 		<!-- BITMAP: MONO_COLOR_1 -->
 	</reg32>
-	<bitset name="nv3_canvas_bounds" inline="yes">
+	<bitset name="nv3_canvas_bounds" inline="true">
 		<bitfield low="0" high="10" name="X"/>
 		<bitfield low="16" high="29" name="Y"/>
 	</bitset>

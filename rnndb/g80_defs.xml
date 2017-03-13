@@ -33,7 +33,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	<value value="3" name="SYSRAM_NO_SNOOP"/> <!-- XXX: check -->
 </enum>
 
-<bitset name="g80_channel" inline="yes">
+<bitset name="g80_channel" inline="true">
 	<bitfield high="27" low="0" name="ADDRESS" shr="12"/>
 	<bitfield high="29" low="28" name="TARGET" type="g80_mem_target"/>
 </bitset>

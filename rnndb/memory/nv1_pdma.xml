@@ -9,7 +9,7 @@
 <domain name="NV_MMIO" bare="true" prefix="chipset">
 
 <array offset="0x100000" name="PDMA" stride="0x1000" length="1" variants="NV1">
-	<bitset name="nv1_pdma_intr" inline="yes">
+	<bitset name="nv1_pdma_intr" inline="true">
 		<bitfield pos="0" name="NULL"/>
 		<bitfield pos="4" name="NOT_PRESENT"/>
 		<bitfield pos="8" name="ACCESS"/>

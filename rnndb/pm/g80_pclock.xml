@@ -8,14 +8,14 @@
 
 <domain name="NV_MMIO" bare="true" prefix="chipset">
 
-<bitset name="g80_spll_ctrl" inline="yes">
+<bitset name="g80_spll_ctrl" inline="true">
 	<bitfield low="0" high="7" name="UNK0"/>
 	<bitfield pos="8" name="ENABLE_UNK0"/>
 	<bitfield low="16" high="18" name="P"/>
 	<bitfield pos="31" name="ENABLE"/>
 </bitset>
 
-<bitset name="g80_nvpll_ctrl" inline="yes">
+<bitset name="g80_nvpll_ctrl" inline="true">
 	<bitfield low="0" high="7" name="UNK0"/>
 	<bitfield pos="8" name="ENABLE_UNK0"/>
 	<bitfield low="16" high="18" name="P"/>
@@ -24,7 +24,7 @@
 	<bitfield pos="31" name="ENABLE"/>
 </bitset>
 
-<bitset name="g80_nviopll_ctrl" inline="yes">
+<bitset name="g80_nviopll_ctrl" inline="true">
 	<bitfield low="0" high="7" name="UNK0"/>
 	<bitfield pos="8" name="ENABLE_UNK0"/>
 	<bitfield pos="19" name="NVIOPLL_REF">
@@ -38,7 +38,7 @@
 	<bitfield pos="31" name="ENABLE"/>
 </bitset>
 
-<bitset name="g80_mpll_ctrl" inline="yes">
+<bitset name="g80_mpll_ctrl" inline="true">
 	<bitfield low="0" high="7" name="UNK0"/>
 	<bitfield pos="8" name="ENABLE_UNK0"/>
 	<bitfield pos="9" name="MCLK">
@@ -54,16 +54,16 @@
 	<bitfield pos="31" name="ENABLE"/>
 </bitset>
 
-<bitset name="g80_pll_coef" inline="yes">
+<bitset name="g80_pll_coef" inline="true">
 	<bitfield low="0" high="7" name="M"/>
 	<bitfield low="8" high="15" name="N"/>
 </bitset>
 
-<bitset name="g80_fan_div" inline="yes">
+<bitset name="g80_fan_div" inline="true">
 	<bitfield low="0" high="2" name="P"/>
 </bitset>
 
-<bitset name="g80_div" inline="yes">
+<bitset name="g80_div" inline="true">
 	<bitfield low="0" high="2" name="DOM6_P" variants="G84:G200"/>
 	<bitfield low="4" high="6" name="UNK4" variants="G84:G94 G200"/>
 	<bitfield low="8" high="10" name="VDEC_P" variants="G84-"/>
@@ -85,7 +85,7 @@
 	<reg32 offset="0x02c" name="NVPLL_COEF" type="g80_pll_coef"/>
 	<reg32 offset="0x030" name="XTPLL_CTRL" variants="G84:G98 G200" type="g80_nvpll_ctrl"/>
 	<reg32 offset="0x034" name="XTPLL_COEF" variants="G84:G98 G200" type="g80_pll_coef"/>
-	<bitset name="g92_nvpll_post" inline="yes">
+	<bitset name="g92_nvpll_post" inline="true">
 		<bitfield low="0" high="8" name="UNK0"/>
 		<bitfield low="16" high="19" name="DIV">
 			<value value="0" name="OFF"/>
@@ -106,7 +106,7 @@
 		<bitfield low="28" high="29" name="UNK28"/>
 		<bitfield pos="31" name="UNK31"/>
 	</bitset>
-	<bitset name="g92_spll_post" inline="yes">
+	<bitset name="g92_spll_post" inline="true">
 		<bitfield low="0" high="8" name="UNK0"/>
 		<bitfield low="16" high="18" name="DIV_LOG2"/>
 		<bitfield pos="20" name="UNK20"/>
@@ -117,7 +117,7 @@
 	<reg32 offset="0x040" name="NVPLL_POST" variants="G92:GT215" type="g92_nvpll_post"/>
 	<reg32 offset="0x044" name="XTPLL_POST" variants="G92:G98 G200" type="g92_nvpll_post"/>
 	<reg32 offset="0x048" name="NVIO_PLL_POST" variants="G200" type="g92_spll_post"/>
-	<bitset name="g92_mpll_post_a" inline="yes">
+	<bitset name="g92_mpll_post_a" inline="true">
 		<bitfield low="0" high="8" name="UNK0"/>
 		<bitfield low="16" high="19" name="DIV">
 			<value value="0" name="OFF"/>
@@ -135,7 +135,7 @@
 		<bitfield pos="20" name="UNK20"/>
 		<bitfield low="23" high="31" name="UNK23"/> <!-- XXX: bit 31 is not present on all cards? -->
 	</bitset>
-	<bitset name="g92_mpll_post_b" inline="yes">
+	<bitset name="g92_mpll_post_b" inline="true">
 		<bitfield low="0" high="7" name="UNK0"/>
 		<bitfield low="16" high="18" name="UNK16"/>
 	</bitset>

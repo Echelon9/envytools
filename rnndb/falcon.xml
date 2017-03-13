@@ -7,7 +7,7 @@
 <import file="nvchipsets.xml" />
 <import file="g80_defs.xml" />
 
-<bitset name="falcon_intr" inline="yes">
+<bitset name="falcon_intr" inline="true">
 	<bitfield pos="0" name="PERIODIC"/>
 	<bitfield pos="1" name="WATCHDOG"/>
 	<bitfield pos="2" name="FIFO_DATA"/>

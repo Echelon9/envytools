@@ -14,21 +14,21 @@
 		<value value="2" name="DEFER"/>
 	</enum>
 
-	<bitset name="g80_gpio" inline="yes">
+	<bitset name="g80_gpio" inline="true">
 		<bitfield pos="0" name="OUT"/>
 		<bitfield pos="1" name="OE"/>
 		<bitfield pos="2" name="IN"/>
 		<bitfield pos="3" name="OUT_NEG"/> <!-- if set, OUT or DISPLAY/NVIO control OUT will be flipped -->
 	</bitset>
 
-	<bitset name="g80_auxch_intr" inline="yes">
+	<bitset name="g80_auxch_intr" inline="true">
 		<bitfield pos="0" name="PLUG"/>
 		<bitfield pos="1" name="UNPLUG"/>
 		<bitfield pos="2" name="UNK2"/>
 		<bitfield pos="3" name="UNK3"/>
 	</bitset>
 
-	<bitset name="g80_pnvio_i2c_bitbang" inline="yes">
+	<bitset name="g80_pnvio_i2c_bitbang" inline="true">
 		<bitfield pos="0" name="SCL" variants="G80:GF119"/> <!-- inout -->
 		<bitfield pos="1" name="SDA" variants="G80:GF119"/>
 		<bitfield pos="0" name="SCL_OUT" variants="GF119-"/>
@@ -46,12 +46,12 @@
 		<bitfield pos="5" name="SDA_IN" variants="GF119-"/>
 	</bitset>
 
-	<bitset name="g80_pnvio_gpio_intr_0" inline="yes">
+	<bitset name="g80_pnvio_gpio_intr_0" inline="true">
 		<bitfield low="0" high="15" name="RISE_MASK_0"/>
 		<bitfield low="16" high="31" name="FALL_MASK_0"/>
 	</bitset>
 
-	<bitset name="g80_pnvio_i2c_intr" inline="yes">
+	<bitset name="g80_pnvio_i2c_intr" inline="true">
 		<bitfield pos="0" name="0"/>
 		<bitfield pos="1" name="1"/>
 		<bitfield pos="2" name="2"/>
@@ -64,21 +64,21 @@
 		<bitfield pos="9" name="9" variants="GT215-"/>
 	</bitset>
 
-	<bitset name="g80_pnvio_unk_intr" inline="yes">
+	<bitset name="g80_pnvio_unk_intr" inline="true">
 		<bitfield pos="0" name="UNK0"/>
 		<bitfield pos="1" name="UNK1"/>
 		<bitfield pos="2" name="UNK2"/>
 		<bitfield pos="3" name="UNK3" variants="GF119-"/>
 	</bitset>
 
-	<bitset name="g80_pnvio_auxch_intr" inline="yes">
+	<bitset name="g80_pnvio_auxch_intr" inline="true">
 		<bitfield low="0" high="3" name="0" type="g80_auxch_intr"/>
 		<bitfield low="4" high="7" name="1" type="g80_auxch_intr"/>
 		<bitfield low="8" high="11" name="2" type="g80_auxch_intr"/>
 		<bitfield low="12" high="15" name="3" type="g80_auxch_intr"/>
 	</bitset>
 
-	<bitset name="g80_pnvio_gpio_intr_1" inline="yes">
+	<bitset name="g80_pnvio_gpio_intr_1" inline="true">
 		<bitfield low="0" high="15" name="RISE_MASK_16"/>
 		<bitfield low="16" high="31" name="FALL_MASK_16"/>
 	</bitset>
@@ -242,7 +242,7 @@
 	</array>
 
 	<array name="PNVIO" offset="0x00e000" stride="0x1000" length="1" variants="G80-">
-		<bitset name="gk104_pnvio_intr_summary" inline="yes">
+		<bitset name="gk104_pnvio_intr_summary" inline="true">
 			<bitfield pos="0" name="I2C"/>
 			<bitfield pos="1" name="UNK"/>
 			<bitfield pos="2" name="AUXCH"/>
@@ -523,7 +523,7 @@
 			<reg32 offset="0x18" name="UNK18"/>
 		</array>
 
-		<bitset name="g80_pnvio_pll_ctrl" inline="yes">
+		<bitset name="g80_pnvio_pll_ctrl" inline="true">
 			<bitfield low="0" high="7" name="UNK0"/>
 			<bitfield pos="8" name="STAGES">
 				<value value="0" name="2"/>
@@ -535,7 +535,7 @@
 			<bitfield pos="31" name="STAGE1_ENABLE"/>
 		</bitset>
 
-		<bitset name="g80_pnvio_pll_coef" inline="yes">
+		<bitset name="g80_pnvio_pll_coef" inline="true">
 			<bitfield low="0" high="7" name="M1"/>
 			<bitfield low="8" high="15" name="N1"/>
 			<bitfield low="16" high="23" name="M2"/>
@@ -608,7 +608,7 @@
 			<use-group name="g80_rpll"/>
 		</stripe>
 
-		<bitset name="gt215_rpll_ctrl" inline="yes">
+		<bitset name="gt215_rpll_ctrl" inline="true">
 			<bitfield pos="0" name="ENABLE"/>
 			<bitfield pos="1" name="PWROFF"/>
 			<bitfield pos="2" name="UNK2"/>
@@ -621,7 +621,7 @@
 			<bitfield pos="24" name="UNK24" />
 		</bitset>
 
-		<bitset name="gt215_rpll_coef" inline="yes">
+		<bitset name="gt215_rpll_coef" inline="true">
 			<bitfield low="0" high="7" name="M"/>
 			<bitfield low="8" high="15" name="N"/>
 			<bitfield low="16" high="21" name="UNK16" />

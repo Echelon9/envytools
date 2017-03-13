@@ -63,7 +63,7 @@
 				<value value="3" name="KREXP"/>
 			</bitfield>
 		</reg32>
-		<bitset name="falcon_crypt_intr" inline="yes">
+		<bitset name="falcon_crypt_intr" inline="true">
 			<bitfield pos="0" name="UNK0"/>
 			<bitfield pos="8" name="UNK8"/>
 			<bitfield pos="12" name="UNK12"/>

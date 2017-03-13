@@ -6,7 +6,7 @@
 
 <import file="nvchipsets.xml" />
 
-<bitset name="vga_stack_ctrl" inline="yes">
+<bitset name="vga_stack_ctrl" inline="true">
 	<bitfield pos="0" name="PUSH_TRIGGER"/>
 	<bitfield pos="1" name="POP_TRIGGER"/>
 	<bitfield pos="4" name="EMPTY"/>
@@ -15,7 +15,7 @@
 	<bitfield pos="7" name="UNDERFLOW"/>
 </bitset>
 
-<bitset name="vga_arx" inline="yes">
+<bitset name="vga_arx" inline="true">
 	<bitfield low="0" high="4" name="INDEX"/>
 	<bitfield pos="5" name="PAL_ENABLE"/>
 </bitset>

@@ -7,13 +7,13 @@
 <import file="nvchipsets.xml" />
 <import file="display/nv_vga.xml" />
 
-<bitset name="nv3_pll" inline="yes">
+<bitset name="nv3_pll" inline="true">
 	<bitfield low="0" high="7" name="M"/>
 	<bitfield low="8" high="15" name="N"/>
 	<bitfield low="16" high="18" name="P"/>
 </bitset>
 
-<bitset name="nv30_pll" inline="yes">
+<bitset name="nv30_pll" inline="true">
 	<bitfield low="0" high="3" name="M1"/>
 	<bitfield low="4" high="6" name="M2"/>
 	<bitfield pos="7" name="NM2_ENABLE"/>
@@ -23,7 +23,7 @@
 	<bitfield low="24" high="25" name="N2_3_4"/>
 </bitset>
 
-<bitset name="nv31_pll_s2" inline="yes">
+<bitset name="nv31_pll_s2" inline="true">
 	<bitfield low="0" high="7" name="M"/>
 	<bitfield low="8" high="15" name="N"/>
 	<bitfield pos="31" name="ENABLE"/>

@@ -10,7 +10,7 @@
 <domain name="NV_MMIO" bare="true" prefix="chipset">
 
 <group name="gf100_pmfb_subp">
-	<bitset name="gf100_pmfb_intr" inline="yes">
+	<bitset name="gf100_pmfb_intr" inline="true">
 		<bitfield pos="5" name="COMP_TAG_MESSUP"/>
 	</bitset>
 	<reg32 offset="0x20" name="INTR">

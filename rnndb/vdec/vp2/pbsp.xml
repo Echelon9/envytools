@@ -173,7 +173,7 @@
 			<bitfield pos="5" name="CTRL_RESET"/>
 			<bitfield pos="6" name="DEBLOCK_RESET"/>
 		</reg32>
-		<bitset name="g84_pbsp_vuc_intr" inline="yes">
+		<bitset name="g84_pbsp_vuc_intr" inline="true">
 			<bitfield pos="0" name="VPRING_RESIDUAL_HALT"/>
 			<bitfield pos="1" name="VPRING_CTRL_HALT"/>
 			<bitfield pos="2" name="VPRING_DEBLOCK_HALT"/>

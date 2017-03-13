@@ -8,7 +8,7 @@
 
 <domain name="NV_MMIO" bare="true" prefix="chipset">
 
-<bitset name="gt215_pll_ctrl" inline="yes">
+<bitset name="gt215_pll_ctrl" inline="true">
 	<bitfield pos="0" name="ENABLE"/>
 	<bitfield pos="1" name="PWROFF"/>
 	<bitfield pos="2" name="UNK2"/>
@@ -19,13 +19,13 @@
 	<bitfield pos="17" name="PLL_LOCK"/>
 </bitset>
 
-<bitset name="gt215_pll_coef" inline="yes">
+<bitset name="gt215_pll_coef" inline="true">
 	<bitfield low="0" high="7" name="M"/>
 	<bitfield low="8" high="15" name="N"/>
 	<bitfield low="16" high="21" name="P"/>
 </bitset>
 
-<bitset name="gt215_pll_src" inline="yes">
+<bitset name="gt215_pll_src" inline="true">
 	<doc>VCO = (2 * VCO_SRC) / VCO_DIV</doc>
 	<bitfield pos="0" name="VCO_ENABLE"/>
 	<bitfield low="4" high="5" name="VCO_SRC">

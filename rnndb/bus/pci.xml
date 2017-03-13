@@ -258,7 +258,7 @@
 	</reg32>
 </group>
 
-<bitset name="pci_config_pwr_bdgt_data" inline="yes">
+<bitset name="pci_config_pwr_bdgt_data" inline="true">
 	<bitfield low="0" high="7" name="BASE"/>
 	<bitfield low="8" high="9" name="SCALE">
 		<value value="0" name="1"/>
@@ -392,7 +392,7 @@
 		<bitfield pos="22" name="ERR_UNINITIALIZED_READ"/>
 		<bitfield pos="23" name="ERR_UNINITIALIZED_WRITE"/>
 	</reg32>
-	<bitset name="g84_pci_intr" inline="yes">
+	<bitset name="g84_pci_intr" inline="true">
 		<bitfield pos="0" name="UNK0"/>
 		<bitfield pos="1" name="MSG" variants="GT215-"/>
 		<bitfield pos="2" name="UNK2" variants="GT215-"/>

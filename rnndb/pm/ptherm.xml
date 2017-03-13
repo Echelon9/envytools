@@ -6,7 +6,7 @@
 
 <import file="nvchipsets.xml" />
 
-<bitset name="g80_therm_intr" inline="yes">
+<bitset name="g80_therm_intr" inline="true">
 	<bitfield pos="0" name="TEMP_THRESHOLD_3" />
 	<bitfield pos="1" name="TEMP_THRESHOLD_4" />
 	<bitfield pos="2" name="TEMP_THRESHOLD_CRIT" />
@@ -24,7 +24,7 @@
 	<bitfield pos="14" name="TEMP_THRESHOLD_10" variants="G94-" />
 </bitset>
 
-<bitset name="g80_therm_i2c_sensor_state" inline="yes">
+<bitset name="g80_therm_i2c_sensor_state" inline="true">
 	<bitfield pos="0" name="CRITICAL" />
 	<bitfield pos="3" name="THRESHOLD_1" />
 	<bitfield pos="4" name="THRESHOLD_2" />
@@ -106,7 +106,7 @@
 	<value name="STOP" value="2" />
 </enum>
 
-<bitset name="gf100_ptherm_gate_ctrl" inline="yes">
+<bitset name="gf100_ptherm_gate_ctrl" inline="true">
 	<bitfield low="0" high="1" name="ENG_CLK" type="gf100_ptherm_gate_ctrl_state"/>
 	<bitfield low="2" high="3" name="BLK_CLK" type="gf100_ptherm_gate_ctrl_state"/>
 	<bitfield low="4" high="5" name="ENG_PWR" type="gf100_ptherm_gate_ctrl_state"/>

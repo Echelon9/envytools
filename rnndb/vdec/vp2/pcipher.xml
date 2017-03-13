@@ -16,7 +16,7 @@
 		<bitfield pos="8" name="UNK8"/>
 		<bitfield low="12" high="14" name="UNK12"/>
 	</reg32>
-	<bitset name="g84_pcipher_intr" inline="yes">
+	<bitset name="g84_pcipher_intr" inline="true">
 		<bitfield pos="0" name="INVALID_STATE"/>
 		<bitfield pos="1" name="ILLEGAL_MTHD"/>
 		<bitfield pos="2" name="ILLEGAL_CLASS"/>

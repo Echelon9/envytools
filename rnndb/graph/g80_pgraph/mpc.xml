@@ -7,7 +7,7 @@
 <import file="nvchipsets.xml" />
 <import file="g80_defs.xml" />
 
-<bitset name="g80_mpc_trap" inline="yes">
+<bitset name="g80_mpc_trap" inline="true">
 	<bitfield name="LOCAL_LIMIT_READ" pos="0"/>
 	<bitfield name="LOCAL_LIMIT_WRITE" pos="4"/>
 	<bitfield name="STACK_LIMIT" pos="6"/>

@@ -106,7 +106,7 @@
 	</reg32>
 	<reg32 offset="0x08c" name="DEBUG_3"> <!-- only some revs? -->
 	</reg32>
-	<bitset name="nv1_pgraph_intr" inline="yes">
+	<bitset name="nv1_pgraph_intr" inline="true">
 		<bitfield pos="0" name="INVALID"/>
 		<bitfield pos="4" name="CONTEXT_SWITCH"/>
 		<bitfield pos="8" name="VBLANK"/>
@@ -116,7 +116,7 @@
 		<bitfield pos="24" name="CLIP_SOFTWARE"/>
 		<bitfield pos="28" name="NOTIFY"/>
 	</bitset>
-	<bitset name="nv1_pgraph_invalid" inline="yes">
+	<bitset name="nv1_pgraph_invalid" inline="true">
 		<bitfield pos="0" name="INVALID_METHOD"/>
 		<bitfield pos="4" name="INVALID_VALUE"/>
 		<bitfield pos="8" name="INVALID_NOTIFY"/>

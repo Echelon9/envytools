@@ -28,7 +28,7 @@
 			<bitfield pos="6" name="CLOCK_GATING_1590" variants="NV17:NV20 NV25:GF100"/>
 
 		</reg32>
-		<bitset name="nv_pbus_intr" inline="yes">
+		<bitset name="nv_pbus_intr" inline="true">
 			<bitfield pos="0" name="BUS_ERROR" variants="NV4:G80"/>
 			<bitfield pos="1" name="MMIO_DISABLED_ENG" variants="GF100-"/>
 			<bitfield pos="2" name="MMIO_IBUS_ERR" variants="GF100-"/>
@@ -44,7 +44,7 @@
 			<bitfield pos="26" name="USER" variants="G80-" />
 			<bitfield pos="28" name="USER2" variants="GF100-" /> <!-- NOTE: not in INTR_EN_NRHOST -->
 		</bitset>
-		<bitset name="nv_pbus_intr_gpio" inline="yes">
+		<bitset name="nv_pbus_intr_gpio" inline="true">
 			<bitfield low="0" high="12" name="RISE_MASK" />
 			<bitfield low="16" high="28" name="FALL_MASK" />
 		</bitset>
@@ -78,7 +78,7 @@
 				<bitfield low="16" high="23" name="2"/>
 				<bitfield low="24" high="31" name="3"/>
 			</reg32>
-			<bitset name="nv_pbus_hwsq_status" inline="yes">
+			<bitset name="nv_pbus_hwsq_status" inline="true">
 				<bitfield low="0" high="7" name="IP"/>
 				<bitfield pos="8" name="ACTIVE"/>
 				<bitfield pos="9" name="ILLEGAL_OPCODE" variants="NV41:G92"/> <!-- variants may be incorrect -->
@@ -99,7 +99,7 @@
 				</bitfield>
 				<bitfield low="2" high="3" name="ENTRY_POINT"/>
 			</reg32>
-			<bitset name="nv_pbus_hwsq_flag_0" inline="yes">
+			<bitset name="nv_pbus_hwsq_flag_0" inline="true">
 				<bitfield pos="0" name="GPIO_2_OUT" variants="NV17:G80"/>
 				<bitfield pos="1" name="GPIO_2_OE" variants="NV17:G80"/>
 				<bitfield pos="2" name="GPIO_3_OUT" variants="NV17:G80"/>
@@ -111,7 +111,7 @@
 				<bitfield pos="14" name="GPIO_9_OUT" variants="NV31:G80"/>
 				<bitfield pos="15" name="GPIO_9_OE" variants="NV31:G80"/>
 			</bitset>
-			<bitset name="nv_pbus_hwsq_flag_1" inline="yes">
+			<bitset name="nv_pbus_hwsq_flag_1" inline="true">
 				<bitfield pos="0" name="FB_PAUSE" variants="NV41:GF100"/>
 				<bitfield pos="9" name="PWM_2_ENABLE" variants="NV41:G80"/>
 				<bitfield pos="10" name="PWM_1_ENABLE" variants="NV41:G80"/>

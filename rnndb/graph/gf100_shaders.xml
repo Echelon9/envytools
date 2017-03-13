@@ -13,7 +13,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	<value value="5" name="FP"/>
 </enum>
 
-<bitset name="gf100_rgba" inline="yes">
+<bitset name="gf100_rgba" inline="true">
 	<bitfield pos="0" name="R"/>
 	<bitfield pos="1" name="G"/>
 	<bitfield pos="2" name="B"/>

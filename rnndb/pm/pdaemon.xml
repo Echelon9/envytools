@@ -108,7 +108,7 @@
 		<bitfield pos="4" name="UNK4"/>
 	</reg32>
 
-	<bitset name="gt215_pdaemon_counter_busy_signals" inline="yes">
+	<bitset name="gt215_pdaemon_counter_busy_signals" inline="true">
 		<bitfield pos="0" name="GR"/>
 		<bitfield pos="1" name="GR_HUB" variants="GF100-"/>
 		<bitfield pos="2" name="GR_UNK2" variants="GT215:GF100"/>
@@ -171,7 +171,7 @@
 
 	<!-- 660:680 a handful of unknown regs -->
 
-	<bitset name="gt215_pdaemon_timer_intr" inline="yes">
+	<bitset name="gt215_pdaemon_timer_intr" inline="true">
 		<bitfield pos="8" name="TIMER"/>
 	</bitset>
 	<reg32 offset="0x680" name="TIMER_INTR" type="gt215_pdaemon_timer_intr"/>
@@ -297,7 +297,7 @@
 		<bitfield pos="0" name="ERR"/>
 	</reg32>
 	<reg32 offset="0x7bc" name="MMIO_ENABLE" type="boolean"/>
-	<bitset name="gt215_pdaemon_input0" inline="yes">
+	<bitset name="gt215_pdaemon_input0" inline="true">
 		<bitfield pos="0" name="DAEMON2CTXCTL_ACK" variants="GF100-"/>
 		<bitfield pos="1" name="CTXCTL2DAEMON_REQ" variants="GF100-"/>
 		<!-- XXX variants for the next 5 -->
@@ -354,9 +354,9 @@
 		<bitfield pos="29" name="I2C_9_SDA" variants="GF119-"/>
 		<bitfield pos="30" name="PDISPLAY_INTR" variants="GF119-"/> <!-- from PDISPLAY.INTR_DAEMON -->
 	</bitset>
-	<bitset name="gt215_pdaemon_input1" inline="yes">
+	<bitset name="gt215_pdaemon_input1" inline="true">
 	</bitset>
-	<bitset name="gt215_pdaemon_output" inline="yes">
+	<bitset name="gt215_pdaemon_output" inline="true">
 		<bitfield pos="0" name="DAEMON2CTXCTL_REQ" variants="GF100-"/>
 		<bitfield pos="1" name="CTXCTL2DAEMON_ACK" variants="GF100-"/>
 		<!-- XXX: variants -->

@@ -24,7 +24,7 @@
 	<value value="6" name="PVLD" variants="G98:G200 MCP77-"/>
 </enum>
 
-<bitset name="g80_pfifo_engine_mask" inline="yes">
+<bitset name="g80_pfifo_engine_mask" inline="true">
 	<bitfield pos="0" name="PGRAPH"/>
 	<bitfield pos="1" name="PMPEG" variants="G80:G98 G200:MCP77"/>
 	<bitfield pos="1" name="PPPP" variants="G98:G200 MCP77-"/>
@@ -42,7 +42,7 @@
 	<bitfield pos="5" name="PVLD" variants="G98:G200 MCP77-"/>
 </bitset>
 
-<bitset name="g80_pfifo_flush_ctrl" inline="yes">
+<bitset name="g80_pfifo_flush_ctrl" inline="true">
 	<bitfield pos="0" name="TRIGGER"/>
 	<bitfield pos="1" name="BUSY"/>
 </bitset>

@@ -74,7 +74,7 @@
 	<reg8 offset="0x24" name="CURSOR_Y_POS_LO"/>
 	<reg8 offset="0x25" name="CURSOR_Y_POS_HI"/>
 
-	<bitset name="nv1_pdac_gp_pins" inline="yes">
+	<bitset name="nv1_pdac_gp_pins" inline="true">
 		<bitfield pos="0" name="J0_X"/>
 		<bitfield pos="1" name="J0_Y"/>
 		<bitfield pos="2" name="J1_X"/>
@@ -103,7 +103,7 @@
 		</array>
 	</array>
 
-	<bitset name="nv1_pdac_saturn_pins" inline="yes">
+	<bitset name="nv1_pdac_saturn_pins" inline="true">
 		<bitfield pos="0" name="DATA_0"/>
 		<bitfield pos="1" name="DATA_1"/>
 		<bitfield pos="2" name="DATA_2"/>

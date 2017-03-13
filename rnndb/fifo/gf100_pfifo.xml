@@ -23,7 +23,7 @@
 
 <array name="PFIFO" offset="0x2000" stride="0x2000" length="1" variants="GF100-">
 	<reg32 offset="0x000" name="UNK000"/> <!-- ffffffff/ffffffff/0 -->
-	<bitset name="gf100_pfifo_intr" inline="yes">
+	<bitset name="gf100_pfifo_intr" inline="true">
 		<bitfield pos="0" name="CHAN_TABLE_ERROR"/>
 		<bitfield pos="4" name="BYPASS_ERROR"/> <!-- PFIFO_BYPASS.STATUS -->
 		<bitfield pos="8" name="PLAYLIST"/>
@@ -140,7 +140,7 @@
 	</reg32>
 	<reg32 offset="0x59c" name="VM_FAULT_SOURCE"/> <!-- bit x: VM engine #x -->
 	<reg32 offset="0x5a0" name="SUBFIFO_INTR_SOURCE"/> <!-- bit x: PSUBFIFO #x -->
-	<bitset name="gf100_pfifo_engine_intr" inline="yes">
+	<bitset name="gf100_pfifo_engine_intr" inline="true">
 		<bitfield pos="0" name="NOTIFY"/>
 		<bitfield pos="1" name="UNK1"/>
 		<bitfield pos="2" name="IDLE"/>
@@ -383,7 +383,7 @@
 			<value value="5" name="ONCEINCR"/>
 		</bitfield>
 	</reg32>
-	<bitset name="gf100_precache_state" inline="yes">
+	<bitset name="gf100_precache_state" inline="true">
 		<bitfield pos="0" name="VALID"/>
 		<bitfield pos="1" name="IB_UNK40"/>
 		<bitfield pos="2" name="IB_NON_MAIN"/>
@@ -465,7 +465,7 @@
 	<reg32 offset="0x100" name="UNK100"/> <!-- some sort of status -->
 	<reg32 offset="0x104" name="UNK104" variants="GF100:GK104"/> <!-- 0/fffff/0 -->
 
-	<bitset name="gf100_psubfifo_intr" inline="yes">
+	<bitset name="gf100_psubfifo_intr" inline="true">
 		<bitfield pos="8" name="ENGINE_PULL_TIMEOUT"/>
 		<bitfield pos="14" name="IB_PUT_OVERFLOW"/>
 		<bitfield pos="15" name="IB_ENTRY_INVALID"/>
@@ -503,7 +503,7 @@
 
 	<reg32 offset="0x140" name="UNK140" variants="GK104-"/> <!-- 1f/1f/0... more copy intr? -->
 
-	<bitset name="gf100_psubfifo_copy_intr" inline="yes">
+	<bitset name="gf100_psubfifo_copy_intr" inline="true">
 		<!-- XXX: figure these out -->
 		<bitfield pos="0" name="ILLEGAL_ENUM"/> <!-- invalid cond mode -->
 		<bitfield pos="1" name="ILLEGAL_STATE"/> <!-- COND_MODE with unaligned COND_ADDR -->

@@ -9,7 +9,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 <import file="graph/nv_3ddefs.xml"/>
 <import file="fifo/nv_object.xml"/>
 
-<bitset name="g80_vic" inline="yes">
+<bitset name="g80_vic" inline="true">
 	<bitfield pos="0" name="X"/>
 	<bitfield pos="1" name="Y"/>
 	<bitfield pos="2" name="Z"/>

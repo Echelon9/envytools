@@ -4,75 +4,75 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 <import file="copyright.xml"/>
 
-<bitset name="xy15" inline="yes">
+<bitset name="xy15" inline="true">
 	<bitfield low="0" high="14" name="X" type="uint" />
 	<bitfield low="16" high="30" name="Y" type="uint" />
 </bitset>
-<bitset name="xy16" inline="yes">
+<bitset name="xy16" inline="true">
 	<bitfield low="0" high="15" name="X" type="uint" />
 	<bitfield low="16" high="31" name="Y" type="uint" />
 </bitset>
 
-<bitset name="wh15" inline="yes">
+<bitset name="wh15" inline="true">
 	<bitfield low="0" high="14" name="W" type="uint" />
 	<bitfield low="16" high="30" name="H" type="uint" />
 </bitset>
-<bitset name="wh16" inline="yes">
+<bitset name="wh16" inline="true">
 	<bitfield low="0" high="15" name="W" type="uint" />
 	<bitfield low="16" high="31" name="H" type="uint" />
 </bitset>
 
-<bitset name="xw16" inline="yes">
+<bitset name="xw16" inline="true">
 	<bitfield low="0" high="15" name="X" type="uint" />
 	<bitfield low="16" high="31" name="W" type="uint" />
 </bitset>
 
-<bitset name="yh16" inline="yes">
+<bitset name="yh16" inline="true">
 	<bitfield low="0" high="15" name="Y" type="uint" />
 	<bitfield low="16" high="31" name="H" type="uint" />
 </bitset>
 
-<bitset name="lt16" inline="yes">
+<bitset name="lt16" inline="true">
 	<bitfield low="0" high="15" name="L" type="uint" />
 	<bitfield low="16" high="31" name="T" type="uint" />
 </bitset>
 
-<bitset name="rb16" inline="yes">
+<bitset name="rb16" inline="true">
 	<bitfield low="0" high="15" name="R" type="uint" />
 	<bitfield low="16" high="31" name="B" type="uint" />
 </bitset>
 
-<bitset name="st16" inline="yes">
+<bitset name="st16" inline="true">
 	<bitfield high="15" low="0" name="S" type="int"/>
 	<bitfield high="31" low="16" name="T" type="int"/>
 </bitset>
 
-<bitset name="xrgb8" inline="yes">
+<bitset name="xrgb8" inline="true">
 	<bitfield name="B" high="7" low="0" type="uint"/>
 	<bitfield name="G" high="15" low="8" type="uint"/>
 	<bitfield name="R" high="23" low="16" type="uint"/>
 </bitset>
 
-<bitset name="argb8" inline="yes">
+<bitset name="argb8" inline="true">
 	<bitfield name="B" high="7" low="0" type="uint"/>
 	<bitfield name="G" high="15" low="8" type="uint"/>
 	<bitfield name="R" high="23" low="16" type="uint"/>
 	<bitfield name="A" high="31" low="24" type="uint"/>
 </bitset>
 
-<bitset name="xbgr8" inline="yes">
+<bitset name="xbgr8" inline="true">
 	<bitfield name="R" high="7" low="0" type="uint"/>
 	<bitfield name="G" high="15" low="8" type="uint"/>
 	<bitfield name="B" high="23" low="16" type="uint"/>
 </bitset>
 
-<bitset name="xbgr10" inline="yes">
+<bitset name="xbgr10" inline="true">
 	<bitfield name="R" high="9" low="0" type="uint"/>
 	<bitfield name="G" high="19" low="10" type="uint"/>
 	<bitfield name="B" high="29" low="20" type="uint"/>
 </bitset>
 
-<bitset name="abgr8" inline="yes">
+<bitset name="abgr8" inline="true">
 	<bitfield name="R" high="7" low="0" type="uint"/>
 	<bitfield name="G" high="15" low="8" type="uint"/>
 	<bitfield name="B" high="23" low="16" type="uint"/>
@@ -154,7 +154,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	</reg32>
 </group>
 
-<bitset name="block_dimensions" inline="yes">
+<bitset name="block_dimensions" inline="true">
 	<bitfield high="11" low="8" name="DEPTH" min="0" max="5"/>
 	<bitfield high="7" low="4" name="HEIGHT" min="0" max="5"/>
 	<bitfield high="3" low="0" name="WIDTH" min="0" max="1"/>

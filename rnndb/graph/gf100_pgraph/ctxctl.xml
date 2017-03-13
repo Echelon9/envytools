@@ -62,7 +62,7 @@
 		<value value="0x2d" name="UNK13_MEMIF"/>
 		<value value="0x2e" name="UNK14_MEMIF"/>
 	</enum>
-	<bitset name="gf100_ctxctl_iroute" inline="yes">
+	<bitset name="gf100_ctxctl_iroute" inline="true">
 		<bitfield low="0" high="5" name="SRC0" type="gf100_ctxctl_isrc"/>
 		<bitfield low="8" high="13" name="SRC1" type="gf100_ctxctl_isrc"/>
 		<bitfield pos="16" name="FUN">

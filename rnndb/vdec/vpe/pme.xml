@@ -10,7 +10,7 @@
 <domain name="NV_MMIO" bare="true" prefix="chipset">
 
 <array name="PME" offset="0xb800" stride="0x800" length="1" variants="NV40:G84">
-	<bitset name="pme_intr" inline="yes">
+	<bitset name="pme_intr" inline="true">
 		<bitfield pos="4" name="UNK4" variants="G80-"/>
 		<bitfield pos="8" name="UNK8" variants="NV41-"/> <!-- XXX variants -->
 		<bitfield pos="16" name="UNK16"/>

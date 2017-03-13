@@ -33,7 +33,7 @@
 	<bitfield pos="8" name="UNK480" variants="GT215:GF119"/>
 </bitset>
 
-<bitset name="g98_pppp_unit_status" inline="yes">
+<bitset name="g98_pppp_unit_status" inline="true">
 	<bitfield pos="0" name="BUSY"/>
 	<bitfield pos="4" name="IDLE"/>
 	<bitfield pos="28" name="ERR_UNK0"/>
@@ -122,7 +122,7 @@
 			<bitfield low="30" high="31" name="UNK30"/>
 		</reg32>
 		<reg32 offset="0x10" name="UNK10" length="2"/> <!-- 0 is LUMA and CHROMA_0, 1 is CHROMA_1 -->
-		<bitset name="g98_pppp_fg_ctrl" inline="yes">
+		<bitset name="g98_pppp_fg_ctrl" inline="true">
 			<bitfield pos="0" name="ENABLE"/>
 			<bitfield low="1" high="7" name="UNK1"/>
 		</bitset>

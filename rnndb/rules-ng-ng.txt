@@ -376,12 +376,12 @@ position. Example:
 	<!-- ... -->
 </bitset>
 
-<bitset name="xy16" inline="yes">
+<bitset name="xy16" inline="true">
 	<bitfield high="15" low="0" name="X" />
 	<bitfield high="31" low="16" name="Y" />
 </bitset>
 
-<bitset name="nv50_vic" inline="yes">
+<bitset name="nv50_vic" inline="true">
 	<bitfield high="0" low="0" name="X"/>
 	<bitfield high="1" low="1" name="Y"/>
 	<bitfield high="2" low="2" name="Z"/>

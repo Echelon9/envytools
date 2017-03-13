@@ -8,13 +8,13 @@
 
 <domain name="NV_MMIO" bare="true" prefix="chipset">
 
-<bitset name="gf100_div_ctrl" inline="yes">
+<bitset name="gf100_div_ctrl" inline="true">
 	<bitfield low="0" high="5" add="2" name="POST_DIVIDER_DIV_MODE"/> <!-- add 2 to get the real divider -->
 	<bitfield low="8" high="13" add="2" name="POST_DIVIDER_PLL_MODE"/> <!-- add 2 to get the real divider -->
 	<bitfield pos="31" name="ENABLE_POST_DIVIDER"/>
 </bitset>
 
-<bitset name="gf100_pll_ctrl" inline="yes">
+<bitset name="gf100_pll_ctrl" inline="true">
 	<doc>
 		Avoid setting both ENABLE and PWROFF at the same time. If you do so,
 		make sure to first clear them both before setting ENABLE.
@@ -33,7 +33,7 @@
 	<bitfield pos="17" name="PLL_LOCK"/>
 </bitset>
 
-<bitset name="gf100_pll_coef" inline="yes">
+<bitset name="gf100_pll_coef" inline="true">
 	<doc>
 		output = input * N / M / P.
 
@@ -45,7 +45,7 @@
 	<bitfield low="16" high="21" name="P"/>
 </bitset>
 
-<bitset name="gf100_pll_ref_div_src" inline="yes">
+<bitset name="gf100_pll_ref_div_src" inline="true">
 	<bitfield low="0" high="3" name="SRC">
 		<value value="0" name="SRC0"/>
 		<value value="2" name="SRC2"/>
@@ -65,7 +65,7 @@
 </bitset>
 
 <!-- TODO: Verify this, in div mode -->
-<bitset name="gf100_div_src" inline="yes">
+<bitset name="gf100_div_src" inline="true">
 	<bitfield low="0" high="3" name="SRC">
 		<value value="0" name="SRC0"/>
 		<value value="2" name="100MHz"/>
