@@ -151,6 +151,8 @@
 		<attribute name="access" type="rng:Access" default="rw" use="optional" />
 		<attribute name="type" type="NMTOKENS" use="optional" />
 		<attribute name="shr" type="nonNegativeInteger" use="optional" />
+		<attribute name="min" type="rng:HexOrNumber" use="optional" />
+		<attribute name="max" type="rng:HexOrNumber" use="optional" />
 		<attribute name="varset" type="NMTOKEN" use="optional" />
 		<attribute name="variants" type="string" use="optional" />
 		<attribute name="stride" type="rng:HexOrNumber" use="optional" />
