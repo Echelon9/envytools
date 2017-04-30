@@ -188,7 +188,11 @@
 		<attribute name="high" type="nonNegativeInteger" use="optional" />
 		<attribute name="low" type="nonNegativeInteger" use="optional" />
 		<attribute name="pos" type="nonNegativeInteger" use="optional" />
+		<attribute name="min" type="rng:HexOrNumber" use="optional" />
+		<attribute name="max" type="rng:HexOrNumber" use="optional" />
+		<attribute name="align" type="rng:HexOrNumber" use="optional" />
 		<attribute name="type" type="NMTOKENS" use="optional" />
+		<attribute name="radix" type="nonNegativeInteger" use="optional" />
 		<attribute name="varset" type="NMTOKEN" use="optional" />
 		<attribute name="variants" type="string" use="optional" />
 		<attribute name="shr" type="nonNegativeInteger" use="optional" />
