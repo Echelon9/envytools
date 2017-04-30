@@ -5,7 +5,7 @@
 <import file="copyright.xml"/>
 <import file="g80_defs.xml"/>
 
-<enum name="GF100_VM_ENGINE" varset="chipset">
+<enum name="GF100_VM_ENGINE" prefix="chipset">
 	<value value="0x00" name="PGRAPH"/>
 
 	<value value="0x03" name="PEEPHOLE"/>
@@ -30,7 +30,7 @@
 	<value value="0x1b" name="PCOPY2" variants="GK104-"/>
 </enum>
 
-<enum name="GF100_VM_HUBCLIENT" varset="chipset">
+<enum name="GF100_VM_HUBCLIENT" prefix="chipset">
 	<value value="0x01" name="PCOPY0"/>
 	<value value="0x02" name="PCOPY1"/>
 	<value value="0x03" name="PDISPLAY"/> <!-- EVO, DAEMON, etc. -->

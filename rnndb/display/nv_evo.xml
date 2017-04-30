@@ -22,7 +22,7 @@
 	<value value="0x1" name="FOUR_WORD"/>
 </enum>
 
-<enum name="G80_EVO_LUT_MODE" varset="chipset">
+<enum name="G80_EVO_LUT_MODE" prefix="chipset">
 	<value value="0x0" name="LORES"/>
 	<value value="0x1" name="HIRES"/>
 	<value value="0x3" name="INDEX_1025_UNITY_RANGE" variants="GF119-"/>
@@ -56,7 +56,7 @@
 	<value value="0x1" name="INTERLACED"/>
 </enum>
 
-<enum name="G80_SUPER_SAMPLE" varset="chipset">
+<enum name="G80_SUPER_SAMPLE" prefix="chipset">
 	<value value="0x0" name="X1_AA"/>
 	<value value="0x2" name="X4_AA"/>
 	<value value="0x3" name="X8_AA" variants="GT215:GF119"/>
@@ -361,7 +361,7 @@
 	</reg32>
 </group>
 
-<enum name="G80_DAC_PROTOCOL" varset="chipset">
+<enum name="G80_DAC_PROTOCOL" prefix="chipset">
 	<value value="0x0" name="RGB_CRT"/>
 
 	<value value="0x1" name="CPST_NTSC_M" variants="G80:GF119"/>
@@ -495,7 +495,7 @@
 	</bitfield>
 </bitset>
 
-<enum name="G80_EVO_CURSOR_SIZE" varset="chipset">
+<enum name="G80_EVO_CURSOR_SIZE" prefix="chipset">
 	<value value="0x0" name="W32_H32"/>
 	<value value="0x1" name="W64_H64"/>
 	<value value="0x2" name="W128_H128" variants="GK104-"/>

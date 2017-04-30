@@ -7,7 +7,7 @@
 <import file="fifo/nv_object.xml" />
 <import file="graph/nv1_2d.xml" />
 
-<enum name="NV4_PGRAPH_COLOR_FORMAT" varset="chipset">
+<enum name="NV4_PGRAPH_COLOR_FORMAT" prefix="chipset">
 	<value value="0x00" name="INVALID"/>
 	<value value="0x01" name="Y8"/>
 	<value value="0x02" name="X16A8Y8"/>
@@ -35,7 +35,7 @@
 	<value value="0x19" name="UNK19" variants="NV30-"/>
 </enum>
 
-<enum name="NV4_PGRAPH_SURF_FORMAT" varset="chipset">
+<enum name="NV4_PGRAPH_SURF_FORMAT" prefix="chipset">
 	<value value="0x0" name="INVALID"/>
 	<value value="0x1" name="Y8"/>
 	<value value="0x2" name="UNK2_R5G5B5"/>
@@ -54,7 +54,7 @@
 	<value value="0xf" name="YB8V8YA8U8"/>
 </enum>
 
-<enum name="NV4_PGRAPH_ROP_FORMAT" varset="chipset">
+<enum name="NV4_PGRAPH_ROP_FORMAT" prefix="chipset">
 	<value value="0x0" name="Y8"/>
 	<value value="0x1" name="R5G5B5"/>
 	<value value="0x2" name="R5G6B5"/>

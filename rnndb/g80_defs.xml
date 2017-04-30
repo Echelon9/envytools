@@ -44,7 +44,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	<reg64 offset="0x8" name="TIME"/>
 </domain>
 
-<enum name="G80_VSTATUS" varset="chipset">
+<enum name="G80_VSTATUS" prefix="chipset">
 	<value value="0" name="IDLE"/> <!-- got nothing to do -->
 	<value value="1" name="BUSY"/> <!-- actively doing something -->
 	<value value="2" name="UNK2" variants="GF100-"/>

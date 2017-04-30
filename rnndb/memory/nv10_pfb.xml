@@ -9,7 +9,7 @@
 
 <domain name="NV_MMIO" bare="true" prefix="chipset">
 
-<enum name="NV25_COMP_FORMAT" varset="chipset">
+<enum name="NV25_COMP_FORMAT" prefix="chipset">
 	<value value="0" name="OFF"/>
 	<value value="1" name="Z16_GRAD"/>
 	<value value="2" name="Z24S8_GRAD"/>
@@ -21,7 +21,7 @@
 	<value value="8" name="32_FLAT_MS4" variants="NV30-"/>
 </enum>
 
-<enum name="NV36_COMP_FORMAT" varset="chipset">
+<enum name="NV36_COMP_FORMAT" prefix="chipset">
 	<value value="0" name="OFF"/>
 	<value value="1" name="Z16_GRAD"/>
 	<value value="2" name="Z24S8_GRAD"/>
@@ -31,7 +31,7 @@
 	<value value="6" name="32_FLAT_MS4"/>
 </enum>
 
-<enum name="NV40_COMP_FORMAT" varset="chipset">
+<enum name="NV40_COMP_FORMAT" prefix="chipset">
 	<value value="0" name="OFF"/>
 	<value value="7" name="A8R8G8B8_INTERP_MS2"/>
 	<value value="8" name="32_FLAT_MS4"/>

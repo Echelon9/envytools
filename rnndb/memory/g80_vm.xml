@@ -5,7 +5,7 @@
 <import file="copyright.xml"/>
 <import file="g80_defs.xml"/>
 
-<enum name="G80_VM_ENGINE" varset="chipset">
+<enum name="G80_VM_ENGINE" prefix="chipset">
 	<value value="0" name="PGRAPH"/>
 	<value value="1" name="PVP1" variants="G80:G84"/>
 	<value value="1" name="PVP2" variants="G84:G98 G200:MCP77"/>
@@ -27,7 +27,7 @@
 	<value value="0xe" name="PDAEMON" variants="GT215-"/>
 </enum>
 
-<enum name="G80_VM_CLIENT" varset="chipset">
+<enum name="G80_VM_CLIENT" prefix="chipset">
 	<value value="0x00" name="STRMOUT"/>
 	<value value="0x03" name="DISPATCH"/>
 	<value value="0x04" name="PFIFO_WRITE"/>
@@ -64,7 +64,7 @@
 	<value value="0xf" name="DMAOBJ_LIMIT"/>
 </enum>
 
-<enum name="G80_STORAGE_TYPE" varset="chipset">
+<enum name="G80_STORAGE_TYPE" prefix="chipset">
 	<value value="0x00" name="PITCH"/>
 
 	<value value="0x10" name="S8_Z24_MS1"/>
