@@ -377,7 +377,7 @@
 
 </domain>
 
-<domain name="NV20_ZCOMP_TILE_16" varset="chipset">
+<domain name="NV20_ZCOMP_TILE_16" prefix="chipset">
 	<!-- XXX: fix the differing delta bits -->
 	<!-- 8x4 tile -->
 	<reg32 offset="0x00" name="W0">
@@ -433,7 +433,7 @@
 	</reg32>
 </domain>
 
-<domain name="NV20_ZCOMP_TILE_32" varset="chipset">
+<domain name="NV20_ZCOMP_TILE_32" prefix="chipset">
 	<!-- 4x4 tile -->
 	<reg32 offset="0x00" name="W0">
 		<bitfield low="0" high="7" name="STENCIL"/>

@@ -9,7 +9,7 @@
 	<value value="0x69" name="ADT7473_1"/>
 </enum>
 
-<domain name="ADT7473" varset="ADT7473_REV_ID">
+<domain name="ADT7473" prefix="ADT7473_REV_ID">
 	<reg8 offset="0x21" name="VCCP"/> <!-- 0 to 3V -->
 	<reg8 offset="0x22" name="VCC"/> <!-- 0 to 4.4V -->
 	<!-- either signed or offset-64, as selected by CONFIG_3 bit 0 --> 

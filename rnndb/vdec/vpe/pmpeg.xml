@@ -230,7 +230,7 @@
 </domain>
 
 <!-- XXX: pre G80 -->
-<domain name="G80_MPEGCTX" varset="chipset">
+<domain name="G80_MPEGCTX" prefix="chipset">
 	<reg32 offset="0x00" name="SIZE"/>
 	<reg32 offset="0x04" name="MODE"/>
 	<reg32 offset="0x08" name="FORMAT"/>

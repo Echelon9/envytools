@@ -512,11 +512,11 @@
 	</reg32>
 </group>
 
-<domain name="NV_PCI" varset="chipset">
+<domain name="NV_PCI" prefix="chipset">
 	<use-group name="nv_pci"/>
 </domain>
 
-<domain name="NV_PCI_HDA" varset="chipset">
+<domain name="NV_PCI_HDA" prefix="chipset">
 	<use-group name="nv_pci_hda"/>
 </domain>
 
