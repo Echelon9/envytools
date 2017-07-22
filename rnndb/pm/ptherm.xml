@@ -741,6 +741,9 @@
 	<reg32 offset="0x288" name="FECS_IDLE_FILTER" />
 	<reg32 offset="0x28c" name="HUBMMU_IDLE_FILTER" />
 
+	<reg32 offset="0x2c0" name="GRAD_STEPPING0" />
+	<reg32 offset="0x2c4" name="GRAD_STEPPING1" />
+
 	<reg32 offset="0x308" name="UNK308" variants="GF100-">
 		<bitfield low="0" high="7" name="UNK0" /> <!-- RO -->
 		<bitfield pos="31" name="ENABLE" />
@@ -790,6 +793,8 @@
 		<reg32 offset="0x4c" name="TEMP_ALT_VALUE" variants="GF119-" />
 		<reg32 offset="0x50" name="TEMP_ALT_OFFSET" variants="GF119-" />
 
+		<reg32 offset="0x60" name="TEMPERATURE_UNK60" variants="GK110-" />
+
 		<reg32 offset="0x80" name="THRESHOLD_CRIT" variants="G84:GK110"/>
 		<reg32 offset="0x84" name="THRESHOLD_CRIT_HYST" variants="G84:GF100"/>
 		<!-- if unset, the hysteresis window will span across [THRESHOLD_CRIT-2, THRESHOLD_CRIT+2] -->
@@ -817,6 +822,14 @@
 		<reg32 offset="0xe8" name="THRESHOLD_10" variants="G94:GK110" /> <!-- Window 4 LOW -->
 		<reg32 offset="0xec" name="THRESHOLD_9" variants="G94:GK110" /> <!-- Window 4 HIGH -->
 
+		<reg32 offset="0x2b8" name="TRIGGER_THERM_UNK2B8" variants="GK104-" />
+
+		<!-- Configure NV_THERM in gm20b to support GPU HW throttle. -->
+		<!-- Used to trigger the clock slowdown when particular thermal event active. -->
+		<reg32 offset="0x300" name="EVT_EXT_THERM_0" variants="GK104-" />
+		<reg32 offset="0x304" name="EVT_EXT_THERM_1" variants="GK104-" />
+		<reg32 offset="0x308" name="EVT_EXT_THERM_2" variants="GK104-" />
+
 		<reg32 offset="0x30c" name="THRESHOLD_UNK30C" variants="GK110-">
 			<bitfield low="0" high="7" name="TEMPERATURE" />
 		</reg32>
@@ -835,6 +848,11 @@
 
 		<reg32 offset="0x320" name="THRESHOLD_UNK320" variants="GK110-">
 			<bitfield low="0" high="7" name="TEMPERATURE" />
+		</reg32>
+
+		<reg32 offset="0x398" name="USE_A" variants="GK104-">
+		  <value value="0x07" name="UNK07"/> <!-- initial setup on GM20B -->
+		  <value value="0x6d" name="UNK6D"/> <!-- seen on my GP107 -->
 		</reg32>
 
 		<!-- got from the LM89's datasheet -->
