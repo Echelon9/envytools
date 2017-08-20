@@ -790,6 +790,14 @@
 		<reg32 offset="0x4c" name="TEMP_ALT_VALUE" variants="GF119-" />
 		<reg32 offset="0x50" name="TEMP_ALT_OFFSET" variants="GF119-" />
 
+		<reg32 offset="0x60" name="TEMP_SENSOR_TSENSE" variants="GP100-">
+			<bitfield low="3" high="16" name="FIXED_POINT" />
+			<bitfield pos="29" name="STATE">
+				<value value="1" name="VALID"/>
+				<value value="2" name="SHADOW"/>
+			</bitfield>
+		</reg32>
+
 		<reg32 offset="0x80" name="THRESHOLD_CRIT" variants="G84:GK110"/>
 		<reg32 offset="0x84" name="THRESHOLD_CRIT_HYST" variants="G84:GF100"/>
 		<!-- if unset, the hysteresis window will span across [THRESHOLD_CRIT-2, THRESHOLD_CRIT+2] -->
