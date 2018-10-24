@@ -272,6 +272,8 @@ class  variants    name          description
 0xa1c0 GK110:GK20A GK110_COMPUTE :ref:`CUDA 3.x engine <obj-kepler-compute>`
 0xb0c0 GM107:GM200 GM107_COMPUTE :ref:`CUDA 4.x engine <obj-maxwell-compute>`
 0xb1c0 GM200:-     GM200_COMPUTE :ref:`CUDA 4.x engine <obj-maxwell-compute>`
+0xc0c0 GP100:GP104 GP100_COMPUTE :ref:`CUDA 5.x engine <obj-pascal-compute>`
+0xc1c0 GP104-      GP104_COMPUTE :ref:`CUDA 5.x engine <obj-pascal-compute>`
 ====== =========== ============= ============
 
 
