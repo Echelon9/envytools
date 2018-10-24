@@ -275,6 +275,7 @@ class  variants    name          description
 0xc0c0 GP100:GP104 GP100_COMPUTE :ref:`CUDA 5.x engine <obj-pascal-compute>`
 0xc1c0 GP104-      GP104_COMPUTE :ref:`CUDA 5.x engine <obj-pascal-compute>`
 0xc3c0 GV100-      GV100_COMPUTE :ref:`CUDA 6.x engine <obj-volta-compute>`
+0xc5c0 TU102-      TU102_COMPUTE :ref:`CUDA 7.x engine <obj-turing-compute>`
 ====== =========== ============= ============
 
 

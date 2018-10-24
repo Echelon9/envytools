@@ -231,6 +231,7 @@ xsi:schemaLocation="http://nouveau.freedesktop.org/ rules-ng.xsd">
 	<value value="0xc0c0" name="GP100_COMPUTE" variants="GP100:GP104"/>
 	<value value="0xc1c0" name="GP104_COMPUTE" variants="GP104-"/>
 	<value value="0xc3c0" name="GV100_COMPUTE" variants="GV100-"/>
+	<value value="0xc5c0" name="TU102_COMPUTE" variants="TU102-"/>
 
 	<!-- non-graph objects checked in hardware -->
 	<value value="0x74c1" name="G84_CIPHER" variants="G84:G98 G200"/>
